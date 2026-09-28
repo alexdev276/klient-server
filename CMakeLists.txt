@@ -11,6 +11,10 @@ qt_add_executable(klient-server
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    isocketadapter.h
+    socketadapter.h socketadapter.cpp
+    serversocketadapter.h serversocketadapter.cpp
+    server.h server.cpp
 )
 
 target_link_libraries(klient-server

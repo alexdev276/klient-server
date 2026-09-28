@@ -272,6 +272,78 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+server.o: server.cpp.o
+.PHONY : server.o
+
+# target to build an object file
+server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.o
+.PHONY : server.cpp.o
+
+server.i: server.cpp.i
+.PHONY : server.i
+
+# target to preprocess a source file
+server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.i
+.PHONY : server.cpp.i
+
+server.s: server.cpp.s
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.s
+.PHONY : server.cpp.s
+
+serversocketadapter.o: serversocketadapter.cpp.o
+.PHONY : serversocketadapter.o
+
+# target to build an object file
+serversocketadapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.o
+.PHONY : serversocketadapter.cpp.o
+
+serversocketadapter.i: serversocketadapter.cpp.i
+.PHONY : serversocketadapter.i
+
+# target to preprocess a source file
+serversocketadapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.i
+.PHONY : serversocketadapter.cpp.i
+
+serversocketadapter.s: serversocketadapter.cpp.s
+.PHONY : serversocketadapter.s
+
+# target to generate assembly for a file
+serversocketadapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.s
+.PHONY : serversocketadapter.cpp.s
+
+socketadapter.o: socketadapter.cpp.o
+.PHONY : socketadapter.o
+
+# target to build an object file
+socketadapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.o
+.PHONY : socketadapter.cpp.o
+
+socketadapter.i: socketadapter.cpp.i
+.PHONY : socketadapter.i
+
+# target to preprocess a source file
+socketadapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.i
+.PHONY : socketadapter.cpp.i
+
+socketadapter.s: socketadapter.cpp.s
+.PHONY : socketadapter.s
+
+# target to generate assembly for a file
+socketadapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.s
+.PHONY : socketadapter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -296,6 +368,15 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
+	@echo "... serversocketadapter.o"
+	@echo "... serversocketadapter.i"
+	@echo "... serversocketadapter.s"
+	@echo "... socketadapter.o"
+	@echo "... socketadapter.i"
+	@echo "... socketadapter.s"
 .PHONY : help
 
 

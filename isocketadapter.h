@@ -1,0 +1,4 @@
+#ifndef ISOCKETADAPTER_H
+#define ISOCKETADAPTER_H
+
+#endif // ISOCKETADAPTER_H

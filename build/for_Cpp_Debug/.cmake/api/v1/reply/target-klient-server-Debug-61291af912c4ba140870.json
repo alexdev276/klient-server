@@ -73,13 +73,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 22,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 16,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -335,18 +335,21 @@
 			[
 				0,
 				1,
-				2
+				2,
+				7,
+				9,
+				11
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "klient-server_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "klient-server_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "klient-server_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "klient-server::@6890427a1f51a3e7e1df",
@@ -457,9 +460,6 @@
 	"orderDependencies" : 
 	[
 		{
-			"id" : "klient-server_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -468,6 +468,9 @@
 		{
 			"backtrace" : 0,
 			"id" : "klient-server_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "klient-server_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -482,8 +485,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				5,
-				6
+				12,
+				13
 			]
 		},
 		{
@@ -491,14 +494,21 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				7,
+				9,
+				11
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3
+				3,
+				5,
+				6,
+				8,
+				10
 			]
 		},
 		{
@@ -512,7 +522,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				14
 			]
 		}
 	],
@@ -566,6 +576,72 @@
 			],
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"path" : "isocketadapter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"path" : "socketadapter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"compileGroupIndex" : 0,
+			"path" : "socketadapter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"path" : "serversocketadapter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"compileGroupIndex" : 0,
+			"path" : "serversocketadapter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"path" : "server.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"compileGroupIndex" : 0,
+			"path" : "server.cpp",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,

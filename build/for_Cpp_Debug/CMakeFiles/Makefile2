@@ -84,16 +84,16 @@ clean: CMakeFiles/klient-server_autogen.dir/clean
 # Target rules for target CMakeFiles/klient-server.dir
 
 # All Build rule for target.
-CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen.dir/all
+CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=1,2,3,4 "Built target klient-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target klient-server"
 .PHONY : CMakeFiles/klient-server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/klient-server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/klient-server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" 0
 .PHONY : CMakeFiles/klient-server.dir/rule
@@ -103,10 +103,10 @@ klient-server: CMakeFiles/klient-server.dir/rule
 .PHONY : klient-server
 
 # codegen rule for target.
-CMakeFiles/klient-server.dir/codegen: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 CMakeFiles/klient-server.dir/codegen: CMakeFiles/klient-server_autogen.dir/all
+CMakeFiles/klient-server.dir/codegen: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=1,2,3,4 "Finished codegen for target klient-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target klient-server"
 .PHONY : CMakeFiles/klient-server.dir/codegen
 
 # clean rule for target.
@@ -153,7 +153,7 @@ CMakeFiles/klient-server_autogen_timestamp_deps.dir/clean:
 CMakeFiles/klient-server_autogen.dir/all: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server_autogen.dir/build.make CMakeFiles/klient-server_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server_autogen.dir/build.make CMakeFiles/klient-server_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=5 "Built target klient-server_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=8 "Built target klient-server_autogen"
 .PHONY : CMakeFiles/klient-server_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -170,7 +170,7 @@ klient-server_autogen: CMakeFiles/klient-server_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/klient-server_autogen.dir/codegen: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server_autogen.dir/build.make CMakeFiles/klient-server_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=5 "Finished codegen for target klient-server_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=8 "Finished codegen for target klient-server_autogen"
 .PHONY : CMakeFiles/klient-server_autogen.dir/codegen
 
 # clean rule for target.

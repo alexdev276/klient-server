@@ -693,7 +693,7 @@
 					],
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-10d25f5cd0a197ea8b55.json",
+					"jsonFile" : "directory-.-Debug-9cdea4c9fa7cd91853ae.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -818,7 +818,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "klient-server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-klient-server-Debug-07454e48d9a11d6c2074.json",
+					"jsonFile" : "target-klient-server-Debug-61291af912c4ba140870.json",
 					"name" : "klient-server",
 					"projectIndex" : 0
 				},
