@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "klient-server_autogen/timestamp" "custom" "klient-server_autogen/deps"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/klient-server_autogen/mocs_compilation.cpp" "CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/main.cpp" "CMakeFiles/klient-server.dir/main.cpp.o" "gcc" "CMakeFiles/klient-server.dir/main.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/mainwindow.cpp" "CMakeFiles/klient-server.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/klient-server.dir/mainwindow.cpp.o.d"

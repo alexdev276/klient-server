@@ -10,14 +10,14 @@
 	<key>CFBundleName</key>
 	<string>klient-server</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.klient-server</string>
+	<string>my.example.com</string>
 	<key>CFBundleExecutable</key>
 	<string>klient-server</string>
 
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>0.1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.1</string>
 
 	<key>LSMinimumSystemVersion</key>
 	<string></string>

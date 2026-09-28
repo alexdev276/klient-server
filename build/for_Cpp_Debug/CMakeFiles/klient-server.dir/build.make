@@ -69,13 +69,20 @@ include CMakeFiles/klient-server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/klient-server.dir/flags.make
 
+klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/uic
+klient-server_autogen/timestamp: CMakeFiles/klient-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target klient-server"
+	/opt/homebrew/Cellar/cmake/4.4.3/bin/cmake -E cmake_autogen "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles/klient-server_autogen.dir/AutogenInfo.json" Debug
+	/opt/homebrew/Cellar/cmake/4.4.3/bin/cmake -E touch "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/klient-server_autogen/timestamp"
+
 CMakeFiles/klient-server.dir/codegen:
 .PHONY : CMakeFiles/klient-server.dir/codegen
 
 CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o: klient-server_autogen/mocs_compilation.cpp
 CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o -MF CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/klient-server_autogen/mocs_compilation.cpp"
 
 CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.i: cmake_force
@@ -89,7 +96,7 @@ CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.s: cmake
 CMakeFiles/klient-server.dir/main.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/main.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/main.cpp
 CMakeFiles/klient-server.dir/main.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/klient-server.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/klient-server.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/main.cpp.o -MF CMakeFiles/klient-server.dir/main.cpp.o.d -o CMakeFiles/klient-server.dir/main.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/main.cpp"
 
 CMakeFiles/klient-server.dir/main.cpp.i: cmake_force
@@ -103,7 +110,7 @@ CMakeFiles/klient-server.dir/main.cpp.s: cmake_force
 CMakeFiles/klient-server.dir/mainwindow.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/mainwindow.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/mainwindow.cpp
 CMakeFiles/klient-server.dir/mainwindow.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/klient-server.dir/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/klient-server.dir/mainwindow.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/mainwindow.cpp.o -MF CMakeFiles/klient-server.dir/mainwindow.cpp.o.d -o CMakeFiles/klient-server.dir/mainwindow.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/mainwindow.cpp"
 
 CMakeFiles/klient-server.dir/mainwindow.cpp.i: cmake_force
@@ -117,7 +124,7 @@ CMakeFiles/klient-server.dir/mainwindow.cpp.s: cmake_force
 CMakeFiles/klient-server.dir/socketadapter.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/socketadapter.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.cpp
 CMakeFiles/klient-server.dir/socketadapter.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/klient-server.dir/socketadapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/klient-server.dir/socketadapter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/socketadapter.cpp.o -MF CMakeFiles/klient-server.dir/socketadapter.cpp.o.d -o CMakeFiles/klient-server.dir/socketadapter.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/socketadapter.cpp"
 
 CMakeFiles/klient-server.dir/socketadapter.cpp.i: cmake_force
@@ -131,7 +138,7 @@ CMakeFiles/klient-server.dir/socketadapter.cpp.s: cmake_force
 CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.cpp
 CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/klient-server.dir/serversocketadapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/klient-server.dir/serversocketadapter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/serversocketadapter.cpp.o -MF CMakeFiles/klient-server.dir/serversocketadapter.cpp.o.d -o CMakeFiles/klient-server.dir/serversocketadapter.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversocketadapter.cpp"
 
 CMakeFiles/klient-server.dir/serversocketadapter.cpp.i: cmake_force
@@ -145,7 +152,7 @@ CMakeFiles/klient-server.dir/serversocketadapter.cpp.s: cmake_force
 CMakeFiles/klient-server.dir/server.cpp.o: CMakeFiles/klient-server.dir/flags.make
 CMakeFiles/klient-server.dir/server.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.cpp
 CMakeFiles/klient-server.dir/server.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/klient-server.dir/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/klient-server.dir/server.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/server.cpp.o -MF CMakeFiles/klient-server.dir/server.cpp.o.d -o CMakeFiles/klient-server.dir/server.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/server.cpp"
 
 CMakeFiles/klient-server.dir/server.cpp.i: cmake_force
@@ -176,10 +183,11 @@ klient-server.app/Contents/MacOS/klient-server: CMakeFiles/klient-server.dir/ser
 klient-server.app/Contents/MacOS/klient-server: CMakeFiles/klient-server.dir/server.cpp.o
 klient-server.app/Contents/MacOS/klient-server: CMakeFiles/klient-server.dir/build.make
 klient-server.app/Contents/MacOS/klient-server: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
+klient-server.app/Contents/MacOS/klient-server: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
 klient-server.app/Contents/MacOS/klient-server: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 klient-server.app/Contents/MacOS/klient-server: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 klient-server.app/Contents/MacOS/klient-server: CMakeFiles/klient-server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable klient-server.app/Contents/MacOS/klient-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable klient-server.app/Contents/MacOS/klient-server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/klient-server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -190,7 +198,7 @@ CMakeFiles/klient-server.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/klient-server.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/klient-server.dir/clean
 
-CMakeFiles/klient-server.dir/depend:
+CMakeFiles/klient-server.dir/depend: klient-server_autogen/timestamp
 	cd "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server" "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server" "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug" "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug" "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles/klient-server.dir/DependInfo.cmake" "--color=$(COLOR)" klient-server
 .PHONY : CMakeFiles/klient-server.dir/depend
 

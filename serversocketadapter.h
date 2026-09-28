@@ -1,10 +1,12 @@
 #ifndef SERVERSOCKETADAPTER_H
 #define SERVERSOCKETADAPTER_H
 
-class serversocketadapter
-{
+#include "socketadapter.h"
+
+class ServerSocketAdapter : public SocketAdapter {
+    Q_OBJECT
 public:
-    serversocketadapter();
+    explicit ServerSocketAdapter(QTcpSocket *pSock, QObject *parent = nullptr);
 };
 
 #endif // SERVERSOCKETADAPTER_H

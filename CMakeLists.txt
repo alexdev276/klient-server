@@ -1,37 +1,52 @@
-cmake_minimum_required(VERSION 3.19)
-project(klient-server LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.16)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+project(klient-server VERSION 0.1 LANGUAGES CXX)
 
-qt_standard_project_setup()
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
-qt_add_executable(klient-server
-    WIN32 MACOSX_BUNDLE
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Добавляем модуль Network
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Network)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
+
+set(PROJECT_SOURCES
     main.cpp
     mainwindow.cpp
     mainwindow.h
-    mainwindow.ui
+    # Серверные файлы по методичке
     isocketadapter.h
-    socketadapter.h socketadapter.cpp
-    serversocketadapter.h serversocketadapter.cpp
-    server.h server.cpp
+    socketadapter.h
+    socketadapter.cpp
+    serversocketadapter.h
+    serversocketadapter.cpp
+    server.h
+    server.cpp
 )
 
-target_link_libraries(klient-server
-    PRIVATE
-        Qt::Core
-        Qt::Widgets
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    qt_add_executable(klient-server
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
+    )
+else()
+    add_executable(klient-server ${PROJECT_SOURCES})
+endif()
+
+# Подключаем модуль Network к проекту
+target_link_libraries(klient-server PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Network)
+
+set_target_properties(klient-server PROPERTIES
+    MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
 )
 
-install(TARGETS klient-server
-    BUNDLE  DESTINATION .
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
-
-qt_generate_deploy_app_script(
-    TARGET klient-server
-    OUTPUT_SCRIPT deploy_script
-    NO_UNSUPPORTED_PLATFORM_ERROR
-)
-install(SCRIPT ${deploy_script})
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(klient-server)
+endif()

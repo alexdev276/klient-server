@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/klient-server_autogen"
-  "klient-server_autogen/include/ui_mainwindow.h"
   "klient-server_autogen/mocs_compilation.cpp"
   "klient-server_autogen/timestamp"
 )

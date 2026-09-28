@@ -37,21 +37,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}" TYPE DIRECTORY FILES "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/klient-server.app" USE_SOURCE_PERMISSIONS)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/klient-server.app/Contents/MacOS/klient-server" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/klient-server.app/Contents/MacOS/klient-server")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/opt/homebrew/lib"
-      -add_rpath "@executable_path/../Frameworks"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/klient-server.app/Contents/MacOS/klient-server")
-  endif()
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/.qt/deploy_klient_server_6daf10c572.cmake")
-endif()
-
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

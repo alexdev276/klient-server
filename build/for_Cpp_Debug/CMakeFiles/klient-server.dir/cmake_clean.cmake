@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/klient-server.dir/socketadapter.cpp.o.d"
   "klient-server.app/Contents/MacOS/klient-server"
   "klient-server.pdb"
+  "klient-server_autogen/mocs_compilation.cpp"
+  "klient-server_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.
