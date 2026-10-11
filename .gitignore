@@ -3,3 +3,8 @@ build/
 .qtcreator/
 .DS_Store
 CMakeLists.txt.user
+build/
+*.user
+.qtcreator/
+CMakeLists.txt.user
+.DS_Store
