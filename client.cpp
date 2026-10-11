@@ -1,70 +1,89 @@
 #include "client.h"
 #include <cmath>
 #include <QStringList>
-#include <QMessageBox>
 
 Client::Client(QWidget *parent) : QWidget(parent) {
-    setWindowTitle("Клиент");
-    resize(550, 450);
+    setWindowTitle("Клиент (TCP + UDP)");
+    resize(600, 500);
 
     m_log = new QTextEdit(this);
     m_log->setReadOnly(true);
 
     m_input = new QLineEdit(this);
-    m_input->setPlaceholderText("Сообщение для чата...");
+    m_input->setPlaceholderText("Сообщение для TCP чата...");
 
-    QPushButton *btnChat  = new QPushButton("Отправить", this);
+    m_udpInput = new QLineEdit(this);
+    m_udpInput->setPlaceholderText("Сообщение для UDP...");
+
+    QPushButton *btnChat  = new QPushButton("Отправить (TCP)", this);
     QPushButton *btnCalc1 = new QPushButton("Вариант 1: площадь sin(x), Y>0", this);
     QPushButton *btnCalc4 = new QPushButton("Вариант 4: корни cos³(x)", this);
+    QPushButton *btnUdp   = new QPushButton("Отправить (UDP)", this);
 
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->addWidget(m_log);
 
-    QHBoxLayout *hLayout = new QHBoxLayout();
-    hLayout->addWidget(m_input);
-    hLayout->addWidget(btnChat);
-    layout->addLayout(hLayout);
+    QHBoxLayout *hLayout1 = new QHBoxLayout();
+    hLayout1->addWidget(m_input);
+    hLayout1->addWidget(btnChat);
+    layout->addLayout(hLayout1);
 
     layout->addWidget(btnCalc1);
     layout->addWidget(btnCalc4);
 
-    m_pSock = new ClientSocketAdapter(this);
-    connect(m_pSock, SIGNAL(message(QString)), SLOT(on_message(QString)));
+    QHBoxLayout *hLayout2 = new QHBoxLayout();
+    hLayout2->addWidget(m_udpInput);
+    hLayout2->addWidget(btnUdp);
+    layout->addLayout(hLayout2);
+
+    // TCP сокет
+    m_pTcpSock = new ClientSocketAdapter(this);
+    connect(m_pTcpSock, SIGNAL(message(QString)), SLOT(on_tcpMessage(QString)));
     connect(btnChat,  SIGNAL(clicked()), SLOT(on_sendChat()));
     connect(btnCalc1, SIGNAL(clicked()), SLOT(onStartCalc1()));
     connect(btnCalc4, SIGNAL(clicked()), SLOT(onStartCalc4()));
+
+    // UDP сокет (порт 5556)
+    m_pUdpSock = new UdpAdapter(this, 5556);
+    connect(m_pUdpSock, SIGNAL(message(QString)), SLOT(on_udpMessage(QString)));
+    connect(btnUdp, SIGNAL(clicked()), SLOT(on_sendUdp()));
 }
 
 void Client::on_sendChat() {
     QString text = m_input->text().trimmed();
     if (!text.isEmpty()) {
-        m_pSock->sendString(text);
+        m_pTcpSock->sendString(text);
         m_input->clear();
     }
 }
 
+void Client::on_sendUdp() {
+    QString text = m_udpInput->text().trimmed();
+    if (!text.isEmpty()) {
+        m_pUdpSock->sendString("UDP_BROADCAST:" + text);
+        m_udpInput->clear();
+    }
+}
+
 void Client::onStartCalc1() {
-    // Вариант 1: Y = sin(x), площадь при Y > 0 на [0, 4π]
     double A = 0.0;
     double B = 4 * M_PI;
     int steps = 400;
-    m_pSock->sendString(QString("START_CALC:1:%1:%2:%3").arg(A).arg(B).arg(steps));
-    m_log->append("<i>Отправлен запрос: Вариант 1 (площадь sin(x), Y>0)...</i>");
+    m_pTcpSock->sendString(QString("START_CALC:1:%1:%2:%3").arg(A).arg(B).arg(steps));
+    m_log->append("<i>Запрос: Вариант 1 (площадь sin(x), Y>0)...</i>");
 }
 
 void Client::onStartCalc4() {
-    // Вариант 4: Y = cos³(x), найти корни на [0, 4π]
     double A = 0.0;
     double B = 4 * M_PI;
     int steps = 400;
-    m_pSock->sendString(QString("START_CALC:4:%1:%2:%3").arg(A).arg(B).arg(steps));
-    m_log->append("<i>Отправлен запрос: Вариант 4 (корни cos³(x))...</i>");
+    m_pTcpSock->sendString(QString("START_CALC:4:%1:%2:%3").arg(A).arg(B).arg(steps));
+    m_log->append("<i>Запрос: Вариант 4 (корни cos³(x))...</i>");
 }
 
-void Client::on_message(QString text) {
-    // --- Задача на площадь (Вариант 1) ---
+void Client::on_tcpMessage(QString text) {
     if (text.startsWith("TASK:1:")) {
-        QStringList parts = text.split(":"); // TASK:1:ID:A:B
+        QStringList parts = text.split(":");
         if (parts.size() == 5) {
             int id = parts[2].toInt();
             double a = parts[3].toDouble();
@@ -72,12 +91,11 @@ void Client::on_message(QString text) {
             double area = calculateAreaSin(a, b);
             m_log->append(QString("<i>[Вар.1]</i> Задача %1: [%2, %3] → S = %4")
                               .arg(id).arg(a, 0, 'f', 3).arg(b, 0, 'f', 3).arg(area, 0, 'f', 6));
-            m_pSock->sendString(QString("RESULT:1:%1:%2").arg(id).arg(area));
+            m_pTcpSock->sendString(QString("RESULT:1:%1:%2").arg(id).arg(area));
         }
     }
-    // --- Задача на корни (Вариант 4) ---
     else if (text.startsWith("TASK:4:")) {
-        QStringList parts = text.split(":"); // TASK:4:ID:A:B
+        QStringList parts = text.split(":");
         if (parts.size() == 5) {
             int id = parts[2].toInt();
             double a = parts[3].toDouble();
@@ -85,35 +103,38 @@ void Client::on_message(QString text) {
             QList<double> roots = findRootsCos3(a, b);
             QString rootsStr;
             for (double r : roots) rootsStr += QString::number(r, 'f', 6) + ",";
-            if (!rootsStr.isEmpty()) rootsStr.chop(1); // убрать последнюю запятую
+            if (!rootsStr.isEmpty()) rootsStr.chop(1);
             m_log->append(QString("<i>[Вар.4]</i> Задача %1: [%2, %3] → корней: %4")
                               .arg(id).arg(a, 0, 'f', 3).arg(b, 0, 'f', 3).arg(roots.size()));
-            m_pSock->sendString(QString("RESULT:4:%1:%2").arg(id).arg(rootsStr));
+            m_pTcpSock->sendString(QString("RESULT:4:%1:%2").arg(id).arg(rootsStr));
         }
     }
-    // --- Итог по площади ---
     else if (text.startsWith("FINAL:1:")) {
         double val = text.mid(8).toDouble();
-        m_log->append(QString("<b style='color:green; font-size:14px;'>[Итог Вар.1] Площадь sin(x) при Y>0 = %1</b>")
+        m_log->append(QString("<b style='color:green;'>[Итог Вар.1] Площадь = %1</b>")
                           .arg(val, 0, 'f', 8));
     }
-    // --- Итог по корням ---
     else if (text.startsWith("FINAL:4:")) {
         QString rootsStr = text.mid(8);
-        m_log->append(QString("<b style='color:green; font-size:14px;'>[Итог Вар.4] Корни cos³(x): %1</b>")
+        m_log->append(QString("<b style='color:green;'>[Итог Вар.4] Корни: %1</b>")
                           .arg(rootsStr));
     }
-    // --- Системные / чат ---
     else if (text == "connect") {
-        m_log->append("<b style='color:green;'>Подключено к серверу!</b>");
-    } else if (text.startsWith("SERVER:")) {
+        m_log->append("<b style='color:green;'>Подключено к серверу (TCP)!</b>");
+    }
+    else if (text.startsWith("SERVER:")) {
         m_log->append(QString("<b style='color:red;'>%1</b>").arg(text.mid(7)));
-    } else {
-        m_log->append(QString("<b>[Чат]:</b> %1").arg(text));
+    }
+    else {
+        m_log->append(QString("<b>[TCP Чат]:</b> %1").arg(text));
     }
 }
 
-// Вариант 1: площадь sin(x) при Y > 0, точность 10⁻⁶
+void Client::on_udpMessage(QString text) {
+    m_log->append(QString("<b style='color:blue;'>[UDP]:</b> %1").arg(text));
+}
+
+// Вариант 1: площадь sin(x) при Y > 0
 double Client::calculateAreaSin(double a, double b) {
     double area = 0.0;
     int localSteps = 100000;
@@ -126,8 +147,7 @@ double Client::calculateAreaSin(double a, double b) {
     return area;
 }
 
-// Вариант 4: корни cos³(x) на [a, b]
-// cos³(x) = 0 ⇔ cos(x) = 0 ⇔ x = π/2 + kπ
+// Вариант 4: корни cos³(x)
 QList<double> Client::findRootsCos3(double a, double b) {
     QList<double> roots;
     int localSteps = 100000;
@@ -136,9 +156,7 @@ QList<double> Client::findRootsCos3(double a, double b) {
     for (int i = 1; i <= localSteps; ++i) {
         double x = a + i * dx;
         double y = pow(cos(x), 3);
-        // Смена знака ⇒ корень между x-dx и x
         if (prevY * y < 0) {
-            // Уточняем корень методом бисекции
             double lo = x - dx, hi = x;
             for (int j = 0; j < 60; ++j) {
                 double mid = (lo + hi) / 2;
@@ -147,7 +165,6 @@ QList<double> Client::findRootsCos3(double a, double b) {
             }
             roots.append((lo + hi) / 2);
         }
-        // Точное попадание в ноль
         else if (qAbs(y) < 1e-12) {
             roots.append(x);
         }

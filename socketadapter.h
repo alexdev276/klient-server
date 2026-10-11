@@ -9,7 +9,6 @@ class SocketAdapter : public ISocketAdapter {
 public:
     SocketAdapter(QObject *parent = nullptr, QTcpSocket *pSock = nullptr);
     ~SocketAdapter();
-
     void sendString(const QString &str) override;
 
 protected slots:

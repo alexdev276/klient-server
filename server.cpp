@@ -4,20 +4,25 @@
 #include <QStringList>
 #include <algorithm>
 
-Server::Server(int nPort, QObject *parent)
+Server::Server(int tcpPort, int udpPort, QObject *parent)
     : QObject(parent), m_ptcpServer(new QTcpServer(this)),
+    m_udpAdapter(new UdpAdapter(this, udpPort)),
     m_taskType(0), m_isCalculating(false),
     m_totalTasks(0), m_completedTasks(0), m_finalArea(0.0)
 {
     connect(m_ptcpServer, SIGNAL(newConnection()), SLOT(on_newConnection()));
-    if (!m_ptcpServer->listen(QHostAddress::Any, nPort)) {
+    connect(m_udpAdapter, SIGNAL(message(QString)), SLOT(on_udpMessage(QString)));
+
+    if (!m_ptcpServer->listen(QHostAddress::Any, tcpPort)) {
         m_ptcpServer->close();
-        QTextStream(stdout) << "[ОШИБКА] Не удалось запустить сервер: "
+        QTextStream(stdout) << "[ОШИБКА] Не удалось запустить TCP сервер: "
                             << m_ptcpServer->errorString() << "\n";
         throw m_ptcpServer->errorString();
     }
     QTextStream(stdout) << "========================================\n";
-    QTextStream(stdout) << "=== СЕРВЕР ЗАПУЩЕН НА ПОРТУ " << nPort << " ===\n";
+    QTextStream(stdout) << "=== СЕРВЕР ЗАПУЩЕН ===\n";
+    QTextStream(stdout) << "TCP порт: " << tcpPort << "\n";
+    QTextStream(stdout) << "UDP порт: " << udpPort << "\n";
     QTextStream(stdout) << "========================================\n";
 }
 
@@ -27,7 +32,7 @@ Server::~Server() {
 }
 
 void Server::on_newConnection() {
-    QTextStream(stdout) << "[СЕРВЕР] Новое подключение клиента!\n";
+    QTextStream(stdout) << "[СЕРВЕР] Новое TCP подключение!\n";
     QTcpSocket *pClientSock = m_ptcpServer->nextPendingConnection();
     ISocketAdapter *pSockHandle = new ServerSocketAdapter(pClientSock, this);
     m_clients.push_back(pSockHandle);
@@ -46,33 +51,45 @@ void Server::on_disconnected() {
 }
 
 void Server::broadcast(const QString &msg) {
-    foreach (ISocketAdapter *sock, m_clients) sock->sendString(msg);
+    foreach (ISocketAdapter *sock, m_clients) {
+        sock->sendString(msg);
+    }
+}
+
+void Server::on_udpMessage(QString msg) {
+    QTextStream(stdout) << "[СЕРВЕР UDP] Получено: " << msg << "\n";
+    // UDP можно использовать для широковещательных уведомлений
+    if (msg.startsWith("UDP_BROADCAST:")) {
+        // Рассылаем всем TCP клиентам
+        broadcast(msg.mid(14));
+    }
 }
 
 void Server::on_message(QString msg) {
-    // --- Результат от клиента ---
+    QTextStream(stdout) << "[СЕРВЕР TCP] Получено: " << msg << "\n";
+
+    // --- Результат от клиента (ЛР5) ---
     if (msg.startsWith("RESULT:")) {
         if (!m_isCalculating) return;
-        QStringList parts = msg.split(":"); // RESULT:TYPE:ID:VALUE
+        QStringList parts = msg.split(":");
         if (parts.size() >= 4) {
             int type = parts[1].toInt();
-            // int id = parts[2].toInt(); // можно использовать для контроля
             m_completedTasks++;
 
             if (type == 1) {
-                // Площадь
+                // Вариант 1: Площадь
                 m_finalArea += parts[3].toDouble();
                 QTextStream(stdout) << "[Вар.1] Прогресс: "
                                     << m_completedTasks << "/" << m_totalTasks << "\n";
                 if (m_completedTasks >= m_totalTasks) {
                     m_isCalculating = false;
                     QString finalMsg = QString("FINAL:1:%1").arg(m_finalArea, 0, 'f', 8);
-                    QTextStream(stdout) << "[Вар.1] Итоговая площадь: " << m_finalArea << "\n";
+                    QTextStream(stdout) << "[Вар.1] Итог: " << m_finalArea << "\n";
                     broadcast(finalMsg);
                 }
             }
             else if (type == 4) {
-                // Корни (список через запятую)
+                // Вариант 4: Корни
                 QString rootsStr = parts[3];
                 if (!rootsStr.isEmpty()) {
                     QStringList list = rootsStr.split(",");
@@ -82,7 +99,6 @@ void Server::on_message(QString msg) {
                                     << m_completedTasks << "/" << m_totalTasks << "\n";
                 if (m_completedTasks >= m_totalTasks) {
                     m_isCalculating = false;
-                    // Сортируем и убираем близкие дубликаты
                     std::sort(m_allRoots.begin(), m_allRoots.end());
                     QList<double> uniqueRoots;
                     for (double r : m_allRoots) {
@@ -94,19 +110,18 @@ void Server::on_message(QString msg) {
                         rootsOut += QString::number(r, 'f', 6) + ", ";
                     if (!rootsOut.isEmpty()) rootsOut.chop(2);
                     QString finalMsg = QString("FINAL:4:%1").arg(rootsOut);
-                    QTextStream(stdout) << "[Вар.4] Итоговые корни: " << rootsOut << "\n";
+                    QTextStream(stdout) << "[Вар.4] Итог: " << rootsOut << "\n";
                     broadcast(finalMsg);
                 }
             }
         }
     }
-    // --- Запуск вычислений ---
+    // --- Запуск вычислений (ЛР5) ---
     else if (msg.startsWith("START_CALC:")) {
         if (m_isCalculating) {
             broadcast("SERVER: Вычисления уже запущены!");
             return;
         }
-        // START_CALC:TYPE:A:B:STEPS
         QStringList parts = msg.split(":");
         if (parts.size() == 5) {
             int type = parts[1].toInt();
@@ -116,7 +131,7 @@ void Server::on_message(QString msg) {
             distributeTasks(type, A, B, steps);
         }
     }
-    // --- Чат ---
+    // --- Чат (ЛР4) ---
     else {
         broadcast(msg);
     }
@@ -124,7 +139,7 @@ void Server::on_message(QString msg) {
 
 void Server::distributeTasks(int type, double A, double B, int steps) {
     if (m_clients.isEmpty()) {
-        QTextStream(stdout) << "[ОШИБКА] Нет подключенных клиентов!\n";
+        QTextStream(stdout) << "[ОШИБКА] Нет клиентов!\n";
         return;
     }
     m_taskType = type;

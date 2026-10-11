@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
     if (mode == "Сервер") {
         try {
-            Server s(5555);
+            Server s(5555, 5556); // TCP порт 5555, UDP порт 5556
             return a.exec();
         } catch (QString &e) {
             QMessageBox::critical(nullptr, "Ошибка", e);

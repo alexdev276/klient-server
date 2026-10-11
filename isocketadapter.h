@@ -4,14 +4,11 @@
 #include <QObject>
 #include <QString>
 
-// Абстрактный интерфейс адаптера
 class ISocketAdapter : public QObject {
     Q_OBJECT
 public:
-    explicit ISocketAdapter(QObject *parent) : QObject(parent) {}
+    explicit ISocketAdapter(QObject *parent = nullptr) : QObject(parent) {}
     virtual ~ISocketAdapter() {}
-
-    // Метод отправки строки
     virtual void sendString(const QString &str) = 0;
 
 signals:
