@@ -4,6 +4,7 @@ project(klient-server LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Обязательно подключаем Network!
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Network Widgets)
 
 qt_standard_project_setup()
@@ -16,7 +17,6 @@ qt_add_executable(klient-server
     clientsocketadapter.h clientsocketadapter.cpp
     server.h server.cpp
     client.h client.cpp
-    README.md
 )
 
 target_link_libraries(klient-server PRIVATE

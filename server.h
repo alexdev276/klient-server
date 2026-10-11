@@ -21,6 +21,7 @@ private:
     QTcpServer *m_ptcpServer;
     QList<ISocketAdapter*> m_clients;
 
+    // Состояние для ЛР 5
     bool m_isCalculating;
     int m_totalTasks, m_completedTasks;
     double m_finalArea;

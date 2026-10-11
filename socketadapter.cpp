@@ -6,7 +6,7 @@ SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
     : ISocketAdapter(parent), m_msgSize(-1)
 {
     if (pSock == nullptr)
-        m_ptcpSocket = new QTcpSocket(this);
+        m_ptcpSocket = new QTcpSocket(this); // Qt сам удалит этот сокет
     else
         m_ptcpSocket = pSock;
 
@@ -17,8 +17,8 @@ SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
 SocketAdapter::~SocketAdapter() {
     if (m_ptcpSocket) {
         m_ptcpSocket->close();
-        // ВАЖНО: НЕ делаем delete m_ptcpSocket!
-        // Qt сам удалит его, так как parent = this.
+        // ВАЖНО: Строка delete m_ptcpSocket; УДАЛЕНА!
+        // Qt автоматически удалит объект, так как мы передали 'this' в конструкторе.
     }
 }
 
