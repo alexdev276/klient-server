@@ -10,5 +10,5 @@ ClientSocketAdapter::ClientSocketAdapter(QObject *parent)
     });
 
     qDebug() << "[КЛИЕНТ] Попытка подключения к 127.0.0.1:5555...";
-    m_ptcpSocket->connectToHost("127.0.0.1", 5555); // Порт 5555 вместо 1024!
+    m_ptcpSocket->connectToHost("127.0.0.1", 5555);
 }

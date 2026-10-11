@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
     if (mode == "Сервер") {
         try {
-            Server s(5555); // Порт 5555 (безопасный для macOS/Linux)
+            Server s(5555);
             return a.exec();
         } catch (QString &e) {
             QMessageBox::critical(nullptr, "Ошибка", e);

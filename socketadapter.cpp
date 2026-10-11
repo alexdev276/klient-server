@@ -6,7 +6,7 @@ SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
     : ISocketAdapter(parent), m_msgSize(-1)
 {
     if (pSock == nullptr)
-        m_ptcpSocket = new QTcpSocket(this); // Qt сам удалит этот сокет
+        m_ptcpSocket = new QTcpSocket(this);
     else
         m_ptcpSocket = pSock;
 
@@ -17,8 +17,7 @@ SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
 SocketAdapter::~SocketAdapter() {
     if (m_ptcpSocket) {
         m_ptcpSocket->close();
-        // ВАЖНО: Строка delete m_ptcpSocket; УДАЛЕНА!
-        // Qt автоматически удалит объект, так как мы передали 'this' в конструкторе.
+        // Qt сам удалит сокет, т.к. parent = this
     }
 }
 
@@ -36,14 +35,10 @@ void SocketAdapter::on_readyRead() {
     QDataStream stream(m_ptcpSocket);
     while (true) {
         if (m_msgSize < 0) {
-            if (m_ptcpSocket->bytesAvailable() < (int)sizeof(quint16))
-                return;
-            quint16 size;
-            stream >> size;
-            m_msgSize = size;
+            if (m_ptcpSocket->bytesAvailable() < (int)sizeof(quint16)) return;
+            quint16 size; stream >> size; m_msgSize = size;
         } else {
-            if (m_ptcpSocket->bytesAvailable() < m_msgSize)
-                return;
+            if (m_ptcpSocket->bytesAvailable() < m_msgSize) return;
             stream >> buff;
             emit message(buff);
             m_msgSize = -1;
@@ -51,6 +46,4 @@ void SocketAdapter::on_readyRead() {
     }
 }
 
-void SocketAdapter::on_disconnected() {
-    emit disconnected();
-}
+void SocketAdapter::on_disconnected() { emit disconnected(); }
