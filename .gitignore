@@ -1,0 +1,5 @@
+build/
+*.user
+.qtcreator/
+.DS_Store
+CMakeLists.txt.user

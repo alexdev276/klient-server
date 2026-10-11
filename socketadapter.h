@@ -7,8 +7,8 @@
 class SocketAdapter : public ISocketAdapter {
     Q_OBJECT
 public:
-    explicit SocketAdapter(QObject *parent = nullptr, QTcpSocket *pSock = nullptr);
-    virtual ~SocketAdapter();
+    SocketAdapter(QObject *parent = nullptr, QTcpSocket *pSock = nullptr);
+    ~SocketAdapter();
 
     void sendString(const QString &str) override;
 

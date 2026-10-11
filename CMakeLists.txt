@@ -31,6 +31,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(klient-server
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        README.md
+        clientsocketadapter.h clientsocketadapter.cpp
+        client.h client.cpp
     )
 else()
     add_executable(klient-server ${PROJECT_SOURCES})
