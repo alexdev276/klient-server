@@ -24,7 +24,13 @@ private:
     void log(const QString &msg);
     void connectToServer(const QString &ip);
     void processLine(const QString &line);
-    void sendResult(int type, qint64 id, double a, double b);
+
+    // Одна задача = один микрошаг
+    void computeSingleStep(int type, qint64 id, double a, double b);
+    // Одна задача = чанк [aStart, bEnd] с шагом dx
+    void computeChunk(int type, qint64 id, double aStart, double bEnd, double dx);
+
+    void sendResult(int type, qint64 id, const QString &payload);
 
     QLineEdit      *m_ipEdit;
     QPlainTextEdit *m_logView;

@@ -8,7 +8,7 @@ Client::Client(QWidget *parent)
     : QWidget(parent), m_myId(0)
 {
     setWindowTitle("Клиент");
-    resize(640, 460);
+    resize(660, 480);
 
     QLabel *ipLabel = new QLabel("IP сервера (Enter — переподключиться):");
     m_ipEdit = new QLineEdit("127.0.0.1");
@@ -85,25 +85,53 @@ void Client::processLine(const QString &line)
         log(QString("Мой номер на сервере: #%1").arg(m_myId));
         return;
     }
+
     if (line.startsWith("TASK:")) {
         QStringList parts = line.split(":");
-        if (parts.size() < 5) return;
-        int    type = parts[1].toInt();
-        qint64 id   = parts[2].toLongLong();     // <-- qint64
-        double a    = parts[3].toDouble();
-        double b    = parts[4].toDouble();
+        int type = parts.size() >= 2 ? parts[1].toInt() : 0;
 
-        QString name = (type == 1) ? "площадь sin(x) [Y>0]"
-                                   : "корни cos^3(x)";
+        // 5 полей: TASK:type:id:a:b — один шаг
+        if (parts.size() == 5) {
+            int    type_ = parts[1].toInt();
+            qint64 id    = parts[2].toLongLong();
+            double a     = parts[3].toDouble();
+            double b     = parts[4].toDouble();
 
-        log(QString("Клиент #%1 - шаг %2 : %3  [%4 ; %5]")
-                .arg(m_myId).arg(id).arg(name)
-                .arg(a, 0, 'f', 8)
-                .arg(b, 0, 'f', 8));
+            QString name = (type_ == 1) ? "площадь sin(x) [Y>0]"
+                                        : "корни cos^3(x)";
+            log(QString("Клиент #%1 - шаг %2 : %3  [%4 ; %5]")
+                    .arg(m_myId).arg(id).arg(name)
+                    .arg(a, 0, 'f', 8)
+                    .arg(b, 0, 'f', 8));
 
-        sendResult(type, id, a, b);
+            computeSingleStep(type_, id, a, b);
+            return;
+        }
+
+        // 6 полей: TASK:type:id:aStart:bEnd:dx — чанк
+        if (parts.size() >= 6) {
+            int    type_  = parts[1].toInt();
+            qint64 id     = parts[2].toLongLong();
+            double aStart = parts[3].toDouble();
+            double bEnd   = parts[4].toDouble();
+            double dx     = parts[5].toDouble();
+
+            QString name = (type_ == 1) ? "площадь sin(x) [Y>0]"
+                                        : "корни cos^3(x)";
+            log(QString("Клиент #%1 - чанк %2 : %3  [%4 ; %5]  dx=%6")
+                    .arg(m_myId).arg(id).arg(name)
+                    .arg(aStart, 0, 'f', 8)
+                    .arg(bEnd, 0, 'f', 8)
+                    .arg(dx, 0, 'g', 15));
+
+            computeChunk(type_, id, aStart, bEnd, dx);
+            return;
+        }
+
+        log("Неизвестный формат TASK: " + line);
         return;
     }
+
     if (line.startsWith("FINAL:")) {
         log("ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
         return;
@@ -111,34 +139,73 @@ void Client::processLine(const QString &line)
     log("<- " + line);
 }
 
-void Client::sendResult(int type, qint64 id, double a, double b)
+void Client::computeSingleStep(int type, qint64 id, double a, double b)
 {
+    double dx = (b - a) / 1000.0;
+
     if (type == 1) {
-        const int N = 1000;
-        double h = (b - a) / N;
         double area = 0.0;
-        for (int i = 0; i < N; ++i) {
-            double x = a + (i + 0.5) * h;
+        for (int i = 0; i < 1000; ++i) {
+            double x = a + (i + 0.5) * dx;
             double y = qSin(x);
-            if (y > 0) area += y * h;
+            if (y > 0) area += y * dx;
         }
-        QString r = QString("RESULT:1:%1:%2").arg(id).arg(area, 0, 'f', 8);
-        m_socket->write((r + "\n").toUtf8());
-        m_socket->flush();
-        log(QString("   -> ответ на шаг %1: площадь=%2")
-                .arg(id).arg(area, 0, 'f', 8));
+        sendResult(1, id, QString::number(area, 'f', 12));
     }
     else if (type == 4) {
-        const int N = 1000;
-        double h = (b - a) / N;
         auto f = [](double x) { double c = qCos(x); return c * c * c; };
         QStringList roots;
         double xPrev = a, yPrev = f(a);
-        for (int i = 1; i <= N; ++i) {
-            double xCur = a + i * h;
+        for (int i = 1; i <= 1000; ++i) {
+            double xCur = a + i * dx;
+            double yCur = f(xCur);
+            if (yPrev * yCur < 0.0) {
+                double lo = xPrev, hi = xCur;
+                for (int k = 0; k < 60; ++k) {
+                    double mid = 0.5 * (lo + hi);
+                    if (f(lo) * f(mid) <= 0) hi = mid;
+                    else                     lo = mid;
+                }
+                roots << QString::number(0.5 * (lo + hi), 'f', 9);
+            }
+            xPrev = xCur; yPrev = yCur;
+        }
+        sendResult(4, id, roots.join(","));
+    }
+}
+
+void Client::computeChunk(int type, qint64 id, double aStart, double bEnd, double dx)
+{
+    if (dx <= 0.0 || bEnd <= aStart) {
+        sendResult(type, id, "");
+        return;
+    }
+
+    qint64 n = static_cast<qint64>((bEnd - aStart) / dx);
+    if (n < 1) n = 1;
+
+    if (type == 1) {
+        double area = 0.0;
+        for (qint64 i = 0; i < n; ++i) {
+            double x = aStart + (i + 0.5) * dx;
+            double y = qSin(x);
+            if (y > 0) area += y * dx;
+        }
+        sendResult(1, id, QString::number(area, 'f', 12));
+        log(QString("   -> ответ на чанк %1: площадь=%2")
+                .arg(id).arg(area, 0, 'f', 12));
+    }
+    else if (type == 4) {
+        auto f = [](double x) { double c = qCos(x); return c * c * c; };
+        QStringList roots;
+
+        double xPrev = aStart;
+        double yPrev = f(xPrev);
+        for (qint64 i = 1; i <= n; ++i) {
+            double xCur = aStart + i * dx;
             double yCur = f(xCur);
             if (yPrev == 0.0) {
-                roots << QString::number(xPrev, 'f', 6);
+                roots << QString::number(xPrev, 'f', 9);
             } else if (yPrev * yCur < 0.0) {
                 double lo = xPrev, hi = xCur;
                 for (int k = 0; k < 60; ++k) {
@@ -146,15 +213,19 @@ void Client::sendResult(int type, qint64 id, double a, double b)
                     if (f(lo) * f(mid) <= 0) hi = mid;
                     else                     lo = mid;
                 }
-                roots << QString::number(0.5 * (lo + hi), 'f', 6);
+                roots << QString::number(0.5 * (lo + hi), 'f', 9);
             }
-            xPrev = xCur;
-            yPrev = yCur;
+            xPrev = xCur; yPrev = yCur;
         }
-        QString r = QString("RESULT:4:%1:%2").arg(id).arg(roots.join(","));
-        m_socket->write((r + "\n").toUtf8());
-        m_socket->flush();
-        log(QString("   -> ответ на шаг %1: корней %2")
+        sendResult(4, id, roots.join(","));
+        log(QString("   -> ответ на чанк %1: корней %2")
                 .arg(id).arg(roots.size()));
     }
+}
+
+void Client::sendResult(int type, qint64 id, const QString &payload)
+{
+    QString r = QString("RESULT:%1:%2:%3").arg(type).arg(id).arg(payload);
+    m_socket->write((r + "\n").toUtf8());
+    m_socket->flush();
 }

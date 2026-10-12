@@ -30,7 +30,7 @@ private slots:
 private:
     void sendTo(ISocketAdapter *sock, const QString &msg);
     void broadcast(const QString &msg);
-    void distributeTasks(int type, double A, double B, qint64 steps);
+    void distributeTasks(int type, double A, double B, double dx);
     int  clientId(ISocketAdapter *sock) const;
     void log(const QString &msg);
     void updateStatus();

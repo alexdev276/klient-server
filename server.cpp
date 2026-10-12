@@ -8,6 +8,11 @@
 #include <QtMath>
 #include <algorithm>
 
+// Если общее число шагов <= этого порога — шлём по одной задаче на шаг.
+// Если больше — бьём диапазон на чанки и шлём "start:end:dx".
+static const qint64 DIRECT_LIMIT = 100000;
+static const int    CHUNK_COUNT  = 2000;
+
 Server::Server(int tcpPort, int udpPort, QWidget *parent)
     : QWidget(parent),
     m_ptcpServer(new QTcpServer(this)),
@@ -22,7 +27,6 @@ Server::Server(int tcpPort, int udpPort, QWidget *parent)
     setWindowTitle("Сервер");
     resize(760, 520);
 
-    // ---------- UI ----------
     m_taskCombo = new QComboBox(this);
     m_taskCombo->addItem("Вариант 1: площадь sin(x) при Y>0", 1);
     m_taskCombo->addItem("Вариант 4: корни cos³(x)", 4);
@@ -38,8 +42,8 @@ Server::Server(int tcpPort, int udpPort, QWidget *parent)
     m_bSpin->setValue(4.0 * M_PI);
 
     m_dxSpin = new QDoubleSpinBox(this);
-    m_dxSpin->setRange(1e-15, 1e9);      // <-- очень маленький минимум
-    m_dxSpin->setDecimals(15);           // <-- до 15 знаков после запятой
+    m_dxSpin->setRange(1e-15, 1e9);
+    m_dxSpin->setDecimals(15);
     m_dxSpin->setSingleStep(1e-6);
     m_dxSpin->setValue(0.01);
 
@@ -70,7 +74,6 @@ Server::Server(int tcpPort, int udpPort, QWidget *parent)
 
     connect(m_startBtn, &QPushButton::clicked, this, &Server::onStartClicked);
 
-    // ---------- Network ----------
     connect(m_ptcpServer, &QTcpServer::newConnection, this, &Server::on_newConnection);
     connect(m_udpAdapter, &UdpAdapter::message,       this, &Server::on_udpMessage);
 
@@ -186,18 +189,11 @@ void Server::onStartClicked()
     double B    = m_bSpin->value();
     double dx   = m_dxSpin->value();
 
-    if (B <= A) {
-        log("[СЕРВЕР] Ошибка: B должно быть больше A.");
-        return;
-    }
-    if (dx <= 0.0) {
-        log("[СЕРВЕР] Ошибка: dx должно быть > 0.");
-        return;
-    }
+    if (B <= A) { log("[СЕРВЕР] Ошибка: B должно быть больше A."); return; }
+    if (dx <= 0.0) { log("[СЕРВЕР] Ошибка: dx должно быть > 0."); return; }
 
-    // qint64 — без переполнения даже при 1e10+ шагов
-    qint64 steps = static_cast<qint64>((B - A) / dx);
-    if (steps < 1) steps = 1;
+    qint64 totalSteps = static_cast<qint64>((B - A) / dx);
+    if (totalSteps < 1) totalSteps = 1;
 
     if (m_isCalculating) {
         log("[СЕРВЕР] Смена задания: прерываю текущее вычисление.");
@@ -205,10 +201,20 @@ void Server::onStartClicked()
     }
 
     log("========================================");
-    log(QString("[СЕРВЕР] Запуск: задание=%1, A=%2, B=%3, dx=%4, шагов=%5")
+    log(QString("[СЕРВЕР] Запуск: задание=%1, A=%2, B=%3, dx=%4, всего шагов=%5")
             .arg(type).arg(A, 0, 'g', 15).arg(B, 0, 'g', 15)
-            .arg(dx, 0, 'g', 15).arg(steps));
-    distributeTasks(type, A, B, steps);
+            .arg(dx, 0, 'g', 15).arg(totalSteps));
+
+    if (totalSteps <= DIRECT_LIMIT) {
+        log(QString("[СЕРВЕР] Режим: по одному шагу на задачу (%1 задач).")
+                .arg(totalSteps));
+    } else {
+        log(QString("[СЕРВЕР] Режим: %1 чанков по ~%2 шагов в каждом.")
+                .arg(CHUNK_COUNT)
+                .arg(totalSteps / CHUNK_COUNT));
+    }
+
+    distributeTasks(type, A, B, dx);
 }
 
 void Server::on_message(QString msg)
@@ -222,7 +228,7 @@ void Server::on_message(QString msg)
         if (parts.size() < 4) return;
 
         int    type   = parts[1].toInt();
-        qint64 taskId = parts[2].toLongLong();  // <-- qint64
+        qint64 taskId = parts[2].toLongLong();
 
         m_completedTasks++;
 
@@ -230,7 +236,7 @@ void Server::on_message(QString msg)
             double val = parts[3].toDouble();
             m_finalArea += val;
 
-            log(QString("[СЕРВЕР] Клиент #%1 выполнил шаг %2 (площадь=%3) | %4/%5")
+            log(QString("[СЕРВЕР] Клиент #%1 выполнил задачу %2 (площадь=%3) | %4/%5")
                     .arg(id).arg(taskId)
                     .arg(val, 0, 'f', 8)
                     .arg(m_completedTasks).arg(m_totalTasks));
@@ -254,7 +260,7 @@ void Server::on_message(QString msg)
                     m_allRoots.append(s.toDouble());
             }
 
-            log(QString("[СЕРВЕР] Клиент #%1 выполнил шаг %2 (корней: %3) | %4/%5")
+            log(QString("[СЕРВЕР] Клиент #%1 выполнил задачу %2 (корней: %3) | %4/%5")
                     .arg(id).arg(taskId).arg(found)
                     .arg(m_completedTasks).arg(m_totalTasks));
 
@@ -288,7 +294,7 @@ void Server::on_message(QString msg)
     }
 }
 
-void Server::distributeTasks(int type, double A, double B, qint64 steps)
+void Server::distributeTasks(int type, double A, double B, double dx)
 {
     if (m_clients.isEmpty()) {
         log("[СЕРВЕР] Нет клиентов!");
@@ -296,43 +302,89 @@ void Server::distributeTasks(int type, double A, double B, qint64 steps)
     }
 
     m_isCalculating  = true;
-    m_totalTasks     = steps;
     m_completedTasks = 0;
     m_finalArea      = 0.0;
     m_allRoots.clear();
-    updateStatus();
 
-    double dx = (B - A) / static_cast<double>(steps);
+    qint64 totalSteps = static_cast<qint64>((B - A) / dx);
+    if (totalSteps < 1) totalSteps = 1;
+
     int clientIdx = 0;
 
-    log(QString("[СЕРВЕР] Круговое распределение %1 задач между %2 клиентами...")
-            .arg(steps).arg(m_clients.size()));
+    // ---------- Режим 1: по одной задаче на шаг ----------
+    if (totalSteps <= DIRECT_LIMIT) {
+        m_totalTasks = totalSteps;
+        updateStatus();
 
-    for (qint64 i = 0; i < steps; ++i) {
-        double a = A + i * dx;
-        double b = A + (i + 1) * dx;
+        log(QString("[СЕРВЕР] Отправляю %1 задач (по одному шагу) "
+                    "между %2 клиентами...")
+                .arg(totalSteps).arg(m_clients.size()));
+
+        for (qint64 i = 0; i < totalSteps; ++i) {
+            double a = A + i * dx;
+            double b = a + dx;
+
+            ISocketAdapter *sock = m_clients[clientIdx];
+            int id = clientId(sock);
+
+            QString task = QString("TASK:%1:%2:%3:%4")
+                               .arg(type).arg(i)
+                               .arg(a, 0, 'g', 17)
+                               .arg(b, 0, 'g', 17);
+
+            log(QString("[СЕРВЕР] Клиент #%1 - шаг %2  [%3 ; %4]")
+                    .arg(id).arg(i).arg(a, 0, 'f', 8).arg(b, 0, 'f', 8));
+
+            sendTo(sock, task);
+            clientIdx = (clientIdx + 1) % m_clients.size();
+        }
+
+        log("[СЕРВЕР] Все задачи отправлены, ждём результаты...");
+        m_startBtn->setText("Сменить задание");
+        return;
+    }
+
+    // ---------- Режим 2: чанками ----------
+    int chunks = CHUNK_COUNT;
+    if (totalSteps < chunks) chunks = static_cast<int>(totalSteps);
+    if (chunks < 1) chunks = 1;
+
+    m_totalTasks = chunks;
+    updateStatus();
+
+    double chunkWidth = (B - A) / chunks;
+
+    log(QString("[СЕРВЕР] Отправляю %1 чанков (~%2 шагов в каждом, dx=%3) "
+                "между %4 клиентами...")
+            .arg(chunks)
+            .arg(totalSteps / chunks)
+            .arg(dx, 0, 'g', 15)
+            .arg(m_clients.size()));
+
+    for (int i = 0; i < chunks; ++i) {
+        double aStart = A + i * chunkWidth;
+        double bEnd   = aStart + chunkWidth;
 
         ISocketAdapter *sock = m_clients[clientIdx];
         int id = clientId(sock);
 
-        QString task = QString("TASK:%1:%2:%3:%4")
+        // TASK:type:id:aStart:bEnd:dx  — 6 полей
+        QString task = QString("TASK:%1:%2:%3:%4:%5")
                            .arg(type).arg(i)
-                           .arg(a, 0, 'g', 17)
-                           .arg(b, 0, 'g', 17);
+                           .arg(aStart, 0, 'g', 17)
+                           .arg(bEnd, 0, 'g', 17)
+                           .arg(dx, 0, 'g', 17);
 
-        // Логируем каждый шаг — если шагов очень много, это может «залить» лог.
-        // Раскомментируйте проверку ниже, если хотите логировать только первые N:
-        // if (i < 1000) {
-        log(QString("[СЕРВЕР] Клиент #%1 - шаг %2  [%3 ; %4]")
+        log(QString("[СЕРВЕР] Клиент #%1 - чанк %2  [%3 ; %4]  dx=%5")
                 .arg(id).arg(i)
-                .arg(a, 0, 'f', 8)
-                .arg(b, 0, 'f', 8));
-        // }
+                .arg(aStart, 0, 'f', 8)
+                .arg(bEnd, 0, 'f', 8)
+                .arg(dx, 0, 'g', 15));
 
         sendTo(sock, task);
         clientIdx = (clientIdx + 1) % m_clients.size();
     }
 
-    log("[СЕРВЕР] Все задачи отправлены, ждём результаты...");
+    log("[СЕРВЕР] Все чанки отправлены, ждём результаты...");
     m_startBtn->setText("Сменить задание");
 }
