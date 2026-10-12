@@ -3,15 +3,18 @@
 
 #include <QObject>
 #include <QTcpServer>
-#include <QUdpSocket>
 #include <QList>
 #include "isocketadapter.h"
 #include "udpadapter.h"
 
-class Server : public QObject {
+class Server : public QObject
+{
     Q_OBJECT
 public:
-    explicit Server(int tcpPort, int udpPort, QObject *parent = nullptr);
+    explicit Server(int tcpPort, int udpPort,
+                    int taskType = 1, double A = 0.0,
+                    double B = 4 * M_PI, int steps = 400,
+                    QObject *parent = nullptr);
     ~Server();
 
 private slots:
@@ -28,10 +31,17 @@ private:
     UdpAdapter *m_udpAdapter;
     QList<ISocketAdapter*> m_clients;
 
-    // Состояние вычислений
+    // Параметры, заданные при запуске
     int m_taskType;
+    double m_A;
+    double m_B;
+    int m_steps;
+    bool m_calculationStarted;
+
+    // Состояние вычислений
     bool m_isCalculating;
-    int m_totalTasks, m_completedTasks;
+    int m_totalTasks;
+    int m_completedTasks;
     double m_finalArea;
     QList<double> m_allRoots;
 };

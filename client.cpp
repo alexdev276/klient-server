@@ -1,174 +1,132 @@
 #include "client.h"
-#include <cmath>
-#include <QStringList>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QtMath>
 
-Client::Client(QWidget *parent) : QWidget(parent) {
-    setWindowTitle("Клиент (TCP + UDP)");
-    resize(600, 500);
+Client::Client(QWidget *parent)
+    : QWidget(parent)
+{
+    setWindowTitle("Клиент");
+    resize(620, 420);
 
-    m_log = new QTextEdit(this);
-    m_log->setReadOnly(true);
+    QLabel *ipLabel = new QLabel("IP сервера (Enter — переподключиться):");
+    m_ipEdit = new QLineEdit("127.0.0.1");
 
-    m_input = new QLineEdit(this);
-    m_input->setPlaceholderText("Сообщение для TCP чата...");
-
-    m_udpInput = new QLineEdit(this);
-    m_udpInput->setPlaceholderText("Сообщение для UDP...");
-
-    QPushButton *btnChat  = new QPushButton("Отправить (TCP)", this);
-    QPushButton *btnCalc1 = new QPushButton("Вариант 1: площадь sin(x), Y>0", this);
-    QPushButton *btnCalc4 = new QPushButton("Вариант 4: корни cos³(x)", this);
-    QPushButton *btnUdp   = new QPushButton("Отправить (UDP)", this);
+    m_logView = new QPlainTextEdit;
+    m_logView->setReadOnly(true);
 
     QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->addWidget(m_log);
+    layout->addWidget(ipLabel);
+    layout->addWidget(m_ipEdit);
+    layout->addWidget(m_logView);
 
-    QHBoxLayout *hLayout1 = new QHBoxLayout();
-    hLayout1->addWidget(m_input);
-    hLayout1->addWidget(btnChat);
-    layout->addLayout(hLayout1);
+    m_socket = new QTcpSocket(this);
+    connect(m_socket, &QTcpSocket::connected,    this, &Client::on_connected);
+    connect(m_socket, &QTcpSocket::disconnected, this, &Client::on_disconnected);
+    connect(m_socket, &QTcpSocket::readyRead,    this, &Client::on_readyRead);
+    connect(m_socket, &QTcpSocket::errorOccurred,this, &Client::on_socketError);
+    connect(m_ipEdit, &QLineEdit::returnPressed, this, &Client::on_ipEntered);
 
-    layout->addWidget(btnCalc1);
-    layout->addWidget(btnCalc4);
-
-    QHBoxLayout *hLayout2 = new QHBoxLayout();
-    hLayout2->addWidget(m_udpInput);
-    hLayout2->addWidget(btnUdp);
-    layout->addLayout(hLayout2);
-
-    // TCP сокет
-    m_pTcpSock = new ClientSocketAdapter(this);
-    connect(m_pTcpSock, SIGNAL(message(QString)), SLOT(on_tcpMessage(QString)));
-    connect(btnChat,  SIGNAL(clicked()), SLOT(on_sendChat()));
-    connect(btnCalc1, SIGNAL(clicked()), SLOT(onStartCalc1()));
-    connect(btnCalc4, SIGNAL(clicked()), SLOT(onStartCalc4()));
-
-    // UDP сокет (порт 5556)
-    m_pUdpSock = new UdpAdapter(this, 5556);
-    connect(m_pUdpSock, SIGNAL(message(QString)), SLOT(on_udpMessage(QString)));
-    connect(btnUdp, SIGNAL(clicked()), SLOT(on_sendUdp()));
+    // Автоподключение при запуске
+    connectToServer(m_ipEdit->text());
 }
 
-void Client::on_sendChat() {
-    QString text = m_input->text().trimmed();
-    if (!text.isEmpty()) {
-        m_pTcpSock->sendString(text);
-        m_input->clear();
+void Client::log(const QString &msg)
+{
+    m_logView->appendPlainText(msg);
+}
+
+void Client::on_ipEntered()
+{
+    if (m_socket->state() != QAbstractSocket::UnconnectedState)
+        m_socket->abort();
+    connectToServer(m_ipEdit->text());
+}
+
+void Client::connectToServer(const QString &ip)
+{
+    log(QString("Подключение к %1:5555...").arg(ip));
+    m_socket->connectToHost(ip, 5555);
+}
+
+void Client::on_connected()          { log("Подключено к серверу."); }
+void Client::on_disconnected()       { log("Соединение с сервером закрыто."); }
+void Client::on_socketError(QAbstractSocket::SocketError)
+{
+    log("Ошибка: " + m_socket->errorString());
+}
+
+void Client::on_readyRead()
+{
+    m_buffer.append(m_socket->readAll());
+    while (m_buffer.contains('\n')) {
+        int idx = m_buffer.indexOf('\n');
+        QString line = QString::fromUtf8(m_buffer.left(idx)).trimmed();
+        m_buffer.remove(0, idx + 1);
+        if (!line.isEmpty()) processLine(line);
     }
 }
 
-void Client::on_sendUdp() {
-    QString text = m_udpInput->text().trimmed();
-    if (!text.isEmpty()) {
-        m_pUdpSock->sendString("UDP_BROADCAST:" + text);
-        m_udpInput->clear();
+void Client::processLine(const QString &line)
+{
+    log("<- " + line);
+
+    if (line.startsWith("TASK:")) {
+        QStringList parts = line.split(":");
+        if (parts.size() < 5) return;
+        int    type = parts[1].toInt();
+        int    id   = parts[2].toInt();
+        double a    = parts[3].toDouble();
+        double b    = parts[4].toDouble();
+        sendResult(type, id, a, b);
+    } else if (line.startsWith("FINAL:")) {
+        log(">>> ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
     }
+    // SERVER:... и прочее просто отображаются как есть
 }
 
-void Client::onStartCalc1() {
-    double A = 0.0;
-    double B = 4 * M_PI;
-    int steps = 400;
-    m_pTcpSock->sendString(QString("START_CALC:1:%1:%2:%3").arg(A).arg(B).arg(steps));
-    m_log->append("<i>Запрос: Вариант 1 (площадь sin(x), Y>0)...</i>");
-}
-
-void Client::onStartCalc4() {
-    double A = 0.0;
-    double B = 4 * M_PI;
-    int steps = 400;
-    m_pTcpSock->sendString(QString("START_CALC:4:%1:%2:%3").arg(A).arg(B).arg(steps));
-    m_log->append("<i>Запрос: Вариант 4 (корни cos³(x))...</i>");
-}
-
-void Client::on_tcpMessage(QString text) {
-    if (text.startsWith("TASK:1:")) {
-        QStringList parts = text.split(":");
-        if (parts.size() == 5) {
-            int id = parts[2].toInt();
-            double a = parts[3].toDouble();
-            double b = parts[4].toDouble();
-            double area = calculateAreaSin(a, b);
-            m_log->append(QString("<i>[Вар.1]</i> Задача %1: [%2, %3] → S = %4")
-                              .arg(id).arg(a, 0, 'f', 3).arg(b, 0, 'f', 3).arg(area, 0, 'f', 6));
-            m_pTcpSock->sendString(QString("RESULT:1:%1:%2").arg(id).arg(area));
+void Client::sendResult(int type, int id, double a, double b)
+{
+    if (type == 1) {
+        // Площадь sin(x) на [a,b], где sin(x) > 0
+        const int N = 1000;
+        double h = (b - a) / N;
+        double area = 0.0;
+        for (int i = 0; i < N; ++i) {
+            double x = a + (i + 0.5) * h;
+            double y = qSin(x);
+            if (y > 0) area += y * h;
         }
+        QString r = QString("RESULT:1:%1:%2").arg(id).arg(area, 0, 'f', 8);
+        m_socket->write((r + "\n").toUtf8());
+        log("-> " + r);
     }
-    else if (text.startsWith("TASK:4:")) {
-        QStringList parts = text.split(":");
-        if (parts.size() == 5) {
-            int id = parts[2].toInt();
-            double a = parts[3].toDouble();
-            double b = parts[4].toDouble();
-            QList<double> roots = findRootsCos3(a, b);
-            QString rootsStr;
-            for (double r : roots) rootsStr += QString::number(r, 'f', 6) + ",";
-            if (!rootsStr.isEmpty()) rootsStr.chop(1);
-            m_log->append(QString("<i>[Вар.4]</i> Задача %1: [%2, %3] → корней: %4")
-                              .arg(id).arg(a, 0, 'f', 3).arg(b, 0, 'f', 3).arg(roots.size()));
-            m_pTcpSock->sendString(QString("RESULT:4:%1:%2").arg(id).arg(rootsStr));
-        }
-    }
-    else if (text.startsWith("FINAL:1:")) {
-        double val = text.mid(8).toDouble();
-        m_log->append(QString("<b style='color:green;'>[Итог Вар.1] Площадь = %1</b>")
-                          .arg(val, 0, 'f', 8));
-    }
-    else if (text.startsWith("FINAL:4:")) {
-        QString rootsStr = text.mid(8);
-        m_log->append(QString("<b style='color:green;'>[Итог Вар.4] Корни: %1</b>")
-                          .arg(rootsStr));
-    }
-    else if (text == "connect") {
-        m_log->append("<b style='color:green;'>Подключено к серверу (TCP)!</b>");
-    }
-    else if (text.startsWith("SERVER:")) {
-        m_log->append(QString("<b style='color:red;'>%1</b>").arg(text.mid(7)));
-    }
-    else {
-        m_log->append(QString("<b>[TCP Чат]:</b> %1").arg(text));
-    }
-}
-
-void Client::on_udpMessage(QString text) {
-    m_log->append(QString("<b style='color:blue;'>[UDP]:</b> %1").arg(text));
-}
-
-// Вариант 1: площадь sin(x) при Y > 0
-double Client::calculateAreaSin(double a, double b) {
-    double area = 0.0;
-    int localSteps = 100000;
-    double dx = (b - a) / localSteps;
-    for (int i = 0; i < localSteps; ++i) {
-        double x = a + i * dx;
-        double y = sin(x);
-        if (y > 0) area += y * dx;
-    }
-    return area;
-}
-
-// Вариант 4: корни cos³(x)
-QList<double> Client::findRootsCos3(double a, double b) {
-    QList<double> roots;
-    int localSteps = 100000;
-    double dx = (b - a) / localSteps;
-    double prevY = pow(cos(a), 3);
-    for (int i = 1; i <= localSteps; ++i) {
-        double x = a + i * dx;
-        double y = pow(cos(x), 3);
-        if (prevY * y < 0) {
-            double lo = x - dx, hi = x;
-            for (int j = 0; j < 60; ++j) {
-                double mid = (lo + hi) / 2;
-                double fm = pow(cos(mid), 3);
-                if (pow(cos(lo), 3) * fm < 0) hi = mid; else lo = mid;
+    else if (type == 4) {
+        // Корни cos^3(x) на [a,b] методом бисекции
+        const int N = 1000;
+        double h = (b - a) / N;
+        auto f = [](double x) { double c = qCos(x); return c * c * c; };
+        QStringList roots;
+        double xPrev = a, yPrev = f(a);
+        for (int i = 1; i <= N; ++i) {
+            double xCur = a + i * h;
+            double yCur = f(xCur);
+            if (yPrev == 0.0) {
+                roots << QString::number(xPrev, 'f', 6);
+            } else if (yPrev * yCur < 0.0) {
+                double lo = xPrev, hi = xCur;
+                for (int k = 0; k < 60; ++k) {
+                    double mid = 0.5 * (lo + hi);
+                    if (f(lo) * f(mid) <= 0) hi = mid;
+                    else                     lo = mid;
+                }
+                roots << QString::number(0.5 * (lo + hi), 'f', 6);
             }
-            roots.append((lo + hi) / 2);
+            xPrev = xCur;
+            yPrev = yCur;
         }
-        else if (qAbs(y) < 1e-12) {
-            roots.append(x);
-        }
-        prevY = y;
+        QString r = QString("RESULT:4:%1:%2").arg(id).arg(roots.join(","));
+        m_socket->write((r + "\n").toUtf8());
+        log("-> " + r);
     }
-    return roots;
 }

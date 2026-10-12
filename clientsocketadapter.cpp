@@ -8,6 +8,6 @@ ClientSocketAdapter::ClientSocketAdapter(QObject *parent)
         qDebug() << "[КЛИЕНТ TCP] Ошибка:" << error;
     });
 
-    qDebug() << "[КЛИЕНТ TCP] Подключение к 127.0.0.1:5555...";
-    m_ptcpSocket->connectToHost("127.0.0.1", 5555);
+    qDebug() << "[КЛИЕНТ TCP] Подключение к 172.20.10.2:5555...";
+    m_ptcpSocket->connectToHost("192.168.8.158", 5555);
 }

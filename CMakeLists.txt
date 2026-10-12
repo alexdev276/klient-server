@@ -17,6 +17,7 @@ qt_add_executable(klient-server
     udpadapter.h udpadapter.cpp
     server.h server.cpp
     client.h client.cpp
+    serversettingsdialog.h serversettingsdialog.cpp
 )
 
 target_link_libraries(klient-server PRIVATE
