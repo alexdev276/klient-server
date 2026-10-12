@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     if (!ok) return 0;
 
     if (mode == "Сервер") {
-        // ---- Одно окно со всеми параметрами ----
         ServerSettingsDialog dlg;
         if (dlg.exec() != QDialog::Accepted) return 0;
 
@@ -27,7 +26,8 @@ int main(int argc, char *argv[])
         double dx = dlg.dx();
 
         if (B <= A) {
-            QMessageBox::warning(nullptr, "Ошибка", "B должно быть больше A");
+            QMessageBox::warning(nullptr, "Ошибка",
+                                 "B должно быть больше A");
             return 1;
         }
 
@@ -46,7 +46,8 @@ int main(int argc, char *argv[])
             QMessageBox::critical(nullptr, "Ошибка", e);
             return 1;
         }
-    } else {
+    }
+    else {
         Client w;
         w.show();
         return a.exec();
