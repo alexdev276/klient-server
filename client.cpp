@@ -89,7 +89,7 @@ void Client::processLine(const QString &line)
         QStringList parts = line.split(":");
         if (parts.size() < 5) return;
         int    type = parts[1].toInt();
-        int    id   = parts[2].toInt();
+        qint64 id   = parts[2].toLongLong();     // <-- qint64
         double a    = parts[3].toDouble();
         double b    = parts[4].toDouble();
 
@@ -98,8 +98,8 @@ void Client::processLine(const QString &line)
 
         log(QString("Клиент #%1 - шаг %2 : %3  [%4 ; %5]")
                 .arg(m_myId).arg(id).arg(name)
-                .arg(a, 0, 'f', 6)
-                .arg(b, 0, 'f', 6));
+                .arg(a, 0, 'f', 8)
+                .arg(b, 0, 'f', 8));
 
         sendResult(type, id, a, b);
         return;
@@ -108,11 +108,10 @@ void Client::processLine(const QString &line)
         log("ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
         return;
     }
-    // Прочие сообщения сервера
     log("<- " + line);
 }
 
-void Client::sendResult(int type, int id, double a, double b)
+void Client::sendResult(int type, qint64 id, double a, double b)
 {
     if (type == 1) {
         const int N = 1000;

@@ -30,7 +30,7 @@ private slots:
 private:
     void sendTo(ISocketAdapter *sock, const QString &msg);
     void broadcast(const QString &msg);
-    void distributeTasks(int type, double A, double B, int steps);
+    void distributeTasks(int type, double A, double B, qint64 steps);
     int  clientId(ISocketAdapter *sock) const;
     void log(const QString &msg);
     void updateStatus();
@@ -55,8 +55,8 @@ private:
 
     // Calculation state
     bool           m_isCalculating;
-    int            m_totalTasks;
-    int            m_completedTasks;
+    qint64         m_totalTasks;
+    qint64         m_completedTasks;
     double         m_finalArea;
     QList<double>  m_allRoots;
 };

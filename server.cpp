@@ -29,18 +29,18 @@ Server::Server(int tcpPort, int udpPort, QWidget *parent)
 
     m_aSpin = new QDoubleSpinBox(this);
     m_aSpin->setRange(-1e15, 1e15);
-    m_aSpin->setDecimals(8);
+    m_aSpin->setDecimals(12);
     m_aSpin->setValue(0.0);
 
     m_bSpin = new QDoubleSpinBox(this);
     m_bSpin->setRange(-1e15, 1e15);
-    m_bSpin->setDecimals(8);
+    m_bSpin->setDecimals(12);
     m_bSpin->setValue(4.0 * M_PI);
 
     m_dxSpin = new QDoubleSpinBox(this);
-    m_dxSpin->setRange(1e-12, 1e6);
-    m_dxSpin->setDecimals(8);
-    m_dxSpin->setSingleStep(0.001);
+    m_dxSpin->setRange(1e-15, 1e9);      // <-- очень маленький минимум
+    m_dxSpin->setDecimals(15);           // <-- до 15 знаков после запятой
+    m_dxSpin->setSingleStep(1e-6);
     m_dxSpin->setValue(0.01);
 
     m_startBtn = new QPushButton("Запустить", this);
@@ -195,7 +195,8 @@ void Server::onStartClicked()
         return;
     }
 
-    int steps = static_cast<int>((B - A) / dx);
+    // qint64 — без переполнения даже при 1e10+ шагов
+    qint64 steps = static_cast<qint64>((B - A) / dx);
     if (steps < 1) steps = 1;
 
     if (m_isCalculating) {
@@ -205,8 +206,8 @@ void Server::onStartClicked()
 
     log("========================================");
     log(QString("[СЕРВЕР] Запуск: задание=%1, A=%2, B=%3, dx=%4, шагов=%5")
-            .arg(type).arg(A, 0, 'g', 12).arg(B, 0, 'g', 12)
-            .arg(dx, 0, 'g', 12).arg(steps));
+            .arg(type).arg(A, 0, 'g', 15).arg(B, 0, 'g', 15)
+            .arg(dx, 0, 'g', 15).arg(steps));
     distributeTasks(type, A, B, steps);
 }
 
@@ -220,8 +221,8 @@ void Server::on_message(QString msg)
         QStringList parts = msg.split(":");
         if (parts.size() < 4) return;
 
-        int type   = parts[1].toInt();
-        int taskId = parts[2].toInt();
+        int    type   = parts[1].toInt();
+        qint64 taskId = parts[2].toLongLong();  // <-- qint64
 
         m_completedTasks++;
 
@@ -287,7 +288,7 @@ void Server::on_message(QString msg)
     }
 }
 
-void Server::distributeTasks(int type, double A, double B, int steps)
+void Server::distributeTasks(int type, double A, double B, qint64 steps)
 {
     if (m_clients.isEmpty()) {
         log("[СЕРВЕР] Нет клиентов!");
@@ -301,13 +302,13 @@ void Server::distributeTasks(int type, double A, double B, int steps)
     m_allRoots.clear();
     updateStatus();
 
-    double dx = (B - A) / steps;
+    double dx = (B - A) / static_cast<double>(steps);
     int clientIdx = 0;
 
     log(QString("[СЕРВЕР] Круговое распределение %1 задач между %2 клиентами...")
             .arg(steps).arg(m_clients.size()));
 
-    for (int i = 0; i < steps; ++i) {
+    for (qint64 i = 0; i < steps; ++i) {
         double a = A + i * dx;
         double b = A + (i + 1) * dx;
 
@@ -316,13 +317,17 @@ void Server::distributeTasks(int type, double A, double B, int steps)
 
         QString task = QString("TASK:%1:%2:%3:%4")
                            .arg(type).arg(i)
-                           .arg(a, 0, 'g', 12)
-                           .arg(b, 0, 'g', 12);
+                           .arg(a, 0, 'g', 17)
+                           .arg(b, 0, 'g', 17);
 
+        // Логируем каждый шаг — если шагов очень много, это может «залить» лог.
+        // Раскомментируйте проверку ниже, если хотите логировать только первые N:
+        // if (i < 1000) {
         log(QString("[СЕРВЕР] Клиент #%1 - шаг %2  [%3 ; %4]")
                 .arg(id).arg(i)
-                .arg(a, 0, 'f', 6)
-                .arg(b, 0, 'f', 6));
+                .arg(a, 0, 'f', 8)
+                .arg(b, 0, 'f', 8));
+        // }
 
         sendTo(sock, task);
         clientIdx = (clientIdx + 1) % m_clients.size();

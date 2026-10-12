@@ -24,7 +24,7 @@ private:
     void log(const QString &msg);
     void connectToServer(const QString &ip);
     void processLine(const QString &line);
-    void sendResult(int type, int id, double a, double b);
+    void sendResult(int type, qint64 id, double a, double b);
 
     QLineEdit      *m_ipEdit;
     QPlainTextEdit *m_logView;
