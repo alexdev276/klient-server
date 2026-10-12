@@ -1,20 +1,23 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-#include <QObject>
+#include <QWidget>
 #include <QTcpServer>
 #include <QList>
+#include <QHash>
+#include <QComboBox>
+#include <QDoubleSpinBox>
+#include <QPushButton>
+#include <QPlainTextEdit>
+#include <QLabel>
 #include "isocketadapter.h"
 #include "udpadapter.h"
 
-class Server : public QObject
+class Server : public QWidget
 {
     Q_OBJECT
 public:
-    explicit Server(int tcpPort, int udpPort,
-                    int taskType = 1, double A = 0.0,
-                    double B = 4 * M_PI, int steps = 400,
-                    QObject *parent = nullptr);
+    explicit Server(int tcpPort, int udpPort, QWidget *parent = nullptr);
     ~Server();
 
 private slots:
@@ -22,22 +25,35 @@ private slots:
     void on_disconnected();
     void on_message(QString msg);
     void on_udpMessage(QString msg);
+    void onStartClicked();
 
 private:
     void sendTo(ISocketAdapter *sock, const QString &msg);
     void broadcast(const QString &msg);
     void distributeTasks(int type, double A, double B, int steps);
+    int  clientId(ISocketAdapter *sock) const;
+    void log(const QString &msg);
+    void updateStatus();
 
+    // UI
+    QComboBox      *m_taskCombo;
+    QDoubleSpinBox *m_aSpin;
+    QDoubleSpinBox *m_bSpin;
+    QDoubleSpinBox *m_dxSpin;
+    QPushButton    *m_startBtn;
+    QLabel         *m_statusLabel;
+    QPlainTextEdit *m_logView;
+
+    // Network
     QTcpServer  *m_ptcpServer;
     UdpAdapter  *m_udpAdapter;
-    QList<ISocketAdapter*> m_clients;
+    QList<ISocketAdapter*>      m_clients;
+    QHash<ISocketAdapter*, int> m_clientIds;
+    int m_nextClientId;
+    int m_tcpPort;
+    int m_udpPort;
 
-    int    m_taskType;
-    double m_A;
-    double m_B;
-    int    m_steps;
-    bool   m_calculationStarted;
-
+    // Calculation state
     bool           m_isCalculating;
     int            m_totalTasks;
     int            m_completedTasks;

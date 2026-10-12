@@ -1,9 +1,7 @@
 #include <QApplication>
 #include <QInputDialog>
-#include <QMessageBox>
 #include "server.h"
 #include "client.h"
-#include "serversettingsdialog.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,35 +15,9 @@ int main(int argc, char *argv[])
     if (!ok) return 0;
 
     if (mode == "Сервер") {
-        ServerSettingsDialog dlg;
-        if (dlg.exec() != QDialog::Accepted) return 0;
-
-        int    taskType = dlg.taskType();
-        double A  = dlg.A();
-        double B  = dlg.B();
-        double dx = dlg.dx();
-
-        if (B <= A) {
-            QMessageBox::warning(nullptr, "Ошибка",
-                                 "B должно быть больше A");
-            return 1;
-        }
-
-        int steps = static_cast<int>((B - A) / dx);
-        if (steps < 1) steps = 1;
-        if (steps > 10000) {
-            QMessageBox::warning(nullptr, "Предупреждение",
-                                 "Слишком много шагов, установлено 10000.");
-            steps = 10000;
-        }
-
-        try {
-            Server s(5555, 5556, taskType, A, B, steps);
-            return a.exec();
-        } catch (QString &e) {
-            QMessageBox::critical(nullptr, "Ошибка", e);
-            return 1;
-        }
+        Server *s = new Server(5555, 5556);
+        s->show();
+        return a.exec();
     }
     else {
         Client w;

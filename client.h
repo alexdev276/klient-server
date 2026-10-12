@@ -30,6 +30,7 @@ private:
     QPlainTextEdit *m_logView;
     QTcpSocket     *m_socket;
     QByteArray      m_buffer;
+    int             m_myId;
 };
 
 #endif // CLIENT_H

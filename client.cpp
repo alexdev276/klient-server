@@ -5,10 +5,10 @@
 #include <QtMath>
 
 Client::Client(QWidget *parent)
-    : QWidget(parent)
+    : QWidget(parent), m_myId(0)
 {
     setWindowTitle("Клиент");
-    resize(620, 420);
+    resize(640, 460);
 
     QLabel *ipLabel = new QLabel("IP сервера (Enter — переподключиться):");
     m_ipEdit = new QLineEdit("127.0.0.1");
@@ -28,7 +28,6 @@ Client::Client(QWidget *parent)
     connect(m_socket, &QTcpSocket::errorOccurred, this, &Client::on_socketError);
     connect(m_ipEdit, &QLineEdit::returnPressed,  this, &Client::on_ipEntered);
 
-    // Страховка от «неразрезанного» потока
     QTimer *flushTimer = new QTimer(this);
     connect(flushTimer, &QTimer::timeout, this, [this](){
         if (!m_buffer.isEmpty() && !m_buffer.contains('\n')) {
@@ -39,7 +38,6 @@ Client::Client(QWidget *parent)
     });
     flushTimer->start(150);
 
-    // Автоподключение при запуске
     connectToServer(m_ipEdit->text());
 }
 
@@ -61,16 +59,8 @@ void Client::connectToServer(const QString &ip)
     m_socket->connectToHost(ip, 5555);
 }
 
-void Client::on_connected()
-{
-    log("Подключено к серверу.");
-}
-
-void Client::on_disconnected()
-{
-    log("Соединение с сервером закрыто.");
-}
-
+void Client::on_connected()      { log("Подключено к серверу."); }
+void Client::on_disconnected()   { log("Соединение с сервером закрыто."); }
 void Client::on_socketError(QAbstractSocket::SocketError)
 {
     log("Ошибка: " + m_socket->errorString());
@@ -89,8 +79,12 @@ void Client::on_readyRead()
 
 void Client::processLine(const QString &line)
 {
-    log("<- " + line);
-
+    if (line.startsWith("WELCOME:")) {
+        m_myId = line.mid(8).toInt();
+        setWindowTitle(QString("Клиент #%1").arg(m_myId));
+        log(QString("Мой номер на сервере: #%1").arg(m_myId));
+        return;
+    }
     if (line.startsWith("TASK:")) {
         QStringList parts = line.split(":");
         if (parts.size() < 5) return;
@@ -98,17 +92,29 @@ void Client::processLine(const QString &line)
         int    id   = parts[2].toInt();
         double a    = parts[3].toDouble();
         double b    = parts[4].toDouble();
+
+        QString name = (type == 1) ? "площадь sin(x) [Y>0]"
+                                   : "корни cos^3(x)";
+
+        log(QString("Клиент #%1 - шаг %2 : %3  [%4 ; %5]")
+                .arg(m_myId).arg(id).arg(name)
+                .arg(a, 0, 'f', 6)
+                .arg(b, 0, 'f', 6));
+
         sendResult(type, id, a, b);
+        return;
     }
-    else if (line.startsWith("FINAL:")) {
-        log(">>> ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
+    if (line.startsWith("FINAL:")) {
+        log("ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
+        return;
     }
+    // Прочие сообщения сервера
+    log("<- " + line);
 }
 
 void Client::sendResult(int type, int id, double a, double b)
 {
     if (type == 1) {
-        // Площадь sin(x) на [a,b], где sin(x) > 0 (метод средних прямоугольников)
         const int N = 1000;
         double h = (b - a) / N;
         double area = 0.0;
@@ -120,10 +126,10 @@ void Client::sendResult(int type, int id, double a, double b)
         QString r = QString("RESULT:1:%1:%2").arg(id).arg(area, 0, 'f', 8);
         m_socket->write((r + "\n").toUtf8());
         m_socket->flush();
-        log("-> " + r);
+        log(QString("   -> ответ на шаг %1: площадь=%2")
+                .arg(id).arg(area, 0, 'f', 8));
     }
     else if (type == 4) {
-        // Корни cos^3(x) на [a,b] методом бисекции
         const int N = 1000;
         double h = (b - a) / N;
         auto f = [](double x) { double c = qCos(x); return c * c * c; };
@@ -149,6 +155,7 @@ void Client::sendResult(int type, int id, double a, double b)
         QString r = QString("RESULT:4:%1:%2").arg(id).arg(roots.join(","));
         m_socket->write((r + "\n").toUtf8());
         m_socket->flush();
-        log("-> " + r);
+        log(QString("   -> ответ на шаг %1: корней %2")
+                .arg(id).arg(roots.size()));
     }
 }
