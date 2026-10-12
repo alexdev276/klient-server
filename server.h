@@ -24,26 +24,25 @@ private slots:
     void on_udpMessage(QString msg);
 
 private:
-    void distributeTasks(int type, double A, double B, int steps);
+    void sendTo(ISocketAdapter *sock, const QString &msg);
     void broadcast(const QString &msg);
+    void distributeTasks(int type, double A, double B, int steps);
 
-    QTcpServer *m_ptcpServer;
-    UdpAdapter *m_udpAdapter;
+    QTcpServer  *m_ptcpServer;
+    UdpAdapter  *m_udpAdapter;
     QList<ISocketAdapter*> m_clients;
 
-    // Параметры, заданные при запуске
-    int m_taskType;
+    int    m_taskType;
     double m_A;
     double m_B;
-    int m_steps;
-    bool m_calculationStarted;
+    int    m_steps;
+    bool   m_calculationStarted;
 
-    // Состояние вычислений
-    bool m_isCalculating;
-    int m_totalTasks;
-    int m_completedTasks;
-    double m_finalArea;
-    QList<double> m_allRoots;
+    bool           m_isCalculating;
+    int            m_totalTasks;
+    int            m_completedTasks;
+    double         m_finalArea;
+    QList<double>  m_allRoots;
 };
 
 #endif // SERVER_H

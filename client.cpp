@@ -1,6 +1,7 @@
 #include "client.h"
 #include <QVBoxLayout>
 #include <QLabel>
+#include <QTimer>
 #include <QtMath>
 
 Client::Client(QWidget *parent)
@@ -21,11 +22,22 @@ Client::Client(QWidget *parent)
     layout->addWidget(m_logView);
 
     m_socket = new QTcpSocket(this);
-    connect(m_socket, &QTcpSocket::connected,    this, &Client::on_connected);
-    connect(m_socket, &QTcpSocket::disconnected, this, &Client::on_disconnected);
-    connect(m_socket, &QTcpSocket::readyRead,    this, &Client::on_readyRead);
-    connect(m_socket, &QTcpSocket::errorOccurred,this, &Client::on_socketError);
-    connect(m_ipEdit, &QLineEdit::returnPressed, this, &Client::on_ipEntered);
+    connect(m_socket, &QTcpSocket::connected,     this, &Client::on_connected);
+    connect(m_socket, &QTcpSocket::disconnected,  this, &Client::on_disconnected);
+    connect(m_socket, &QTcpSocket::readyRead,     this, &Client::on_readyRead);
+    connect(m_socket, &QTcpSocket::errorOccurred, this, &Client::on_socketError);
+    connect(m_ipEdit, &QLineEdit::returnPressed,  this, &Client::on_ipEntered);
+
+    // Страховка от «неразрезанного» потока
+    QTimer *flushTimer = new QTimer(this);
+    connect(flushTimer, &QTimer::timeout, this, [this](){
+        if (!m_buffer.isEmpty() && !m_buffer.contains('\n')) {
+            QString line = QString::fromUtf8(m_buffer).trimmed();
+            m_buffer.clear();
+            if (!line.isEmpty()) processLine(line);
+        }
+    });
+    flushTimer->start(150);
 
     // Автоподключение при запуске
     connectToServer(m_ipEdit->text());
@@ -49,8 +61,16 @@ void Client::connectToServer(const QString &ip)
     m_socket->connectToHost(ip, 5555);
 }
 
-void Client::on_connected()          { log("Подключено к серверу."); }
-void Client::on_disconnected()       { log("Соединение с сервером закрыто."); }
+void Client::on_connected()
+{
+    log("Подключено к серверу.");
+}
+
+void Client::on_disconnected()
+{
+    log("Соединение с сервером закрыто.");
+}
+
 void Client::on_socketError(QAbstractSocket::SocketError)
 {
     log("Ошибка: " + m_socket->errorString());
@@ -79,16 +99,16 @@ void Client::processLine(const QString &line)
         double a    = parts[3].toDouble();
         double b    = parts[4].toDouble();
         sendResult(type, id, a, b);
-    } else if (line.startsWith("FINAL:")) {
+    }
+    else if (line.startsWith("FINAL:")) {
         log(">>> ИТОГОВЫЙ РЕЗУЛЬТАТ: " + line);
     }
-    // SERVER:... и прочее просто отображаются как есть
 }
 
 void Client::sendResult(int type, int id, double a, double b)
 {
     if (type == 1) {
-        // Площадь sin(x) на [a,b], где sin(x) > 0
+        // Площадь sin(x) на [a,b], где sin(x) > 0 (метод средних прямоугольников)
         const int N = 1000;
         double h = (b - a) / N;
         double area = 0.0;
@@ -99,6 +119,7 @@ void Client::sendResult(int type, int id, double a, double b)
         }
         QString r = QString("RESULT:1:%1:%2").arg(id).arg(area, 0, 'f', 8);
         m_socket->write((r + "\n").toUtf8());
+        m_socket->flush();
         log("-> " + r);
     }
     else if (type == 4) {
@@ -127,6 +148,7 @@ void Client::sendResult(int type, int id, double a, double b)
         }
         QString r = QString("RESULT:4:%1:%2").arg(id).arg(roots.join(","));
         m_socket->write((r + "\n").toUtf8());
+        m_socket->flush();
         log("-> " + r);
     }
 }

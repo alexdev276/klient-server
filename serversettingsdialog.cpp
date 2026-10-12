@@ -10,12 +10,10 @@ ServerSettingsDialog::ServerSettingsDialog(QWidget *parent)
     setWindowTitle("Параметры сервера");
     setMinimumWidth(420);
 
-    // Задание
     m_taskCombo = new QComboBox(this);
     m_taskCombo->addItem("Вариант 1: площадь sin(x) при Y>0", 1);
     m_taskCombo->addItem("Вариант 4: корни cos³(x)", 4);
 
-    // Диапазон
     m_aSpin = new QDoubleSpinBox(this);
     m_aSpin->setRange(-1e6, 1e6);
     m_aSpin->setDecimals(6);
@@ -26,7 +24,6 @@ ServerSettingsDialog::ServerSettingsDialog(QWidget *parent)
     m_bSpin->setDecimals(6);
     m_bSpin->setValue(4.0 * M_PI);
 
-    // Точность (шаг)
     m_dxSpin = new QDoubleSpinBox(this);
     m_dxSpin->setRange(1e-6, 1.0);
     m_dxSpin->setDecimals(6);
@@ -34,10 +31,10 @@ ServerSettingsDialog::ServerSettingsDialog(QWidget *parent)
     m_dxSpin->setValue(0.01);
 
     QFormLayout *form = new QFormLayout;
-    form->addRow("Задание:",               m_taskCombo);
-    form->addRow("Начало диапазона (A):",  m_aSpin);
-    form->addRow("Конец диапазона (B):",   m_bSpin);
-    form->addRow("Шаг dx (точность):",     m_dxSpin);
+    form->addRow("Задание:",              m_taskCombo);
+    form->addRow("Начало диапазона (A):", m_aSpin);
+    form->addRow("Конец диапазона (B):",  m_bSpin);
+    form->addRow("Шаг dx (точность):",    m_dxSpin);
 
     QDialogButtonBox *buttons = new QDialogButtonBox(
         QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
