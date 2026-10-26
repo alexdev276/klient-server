@@ -2,6 +2,7 @@
 #define ISOCKETADAPTER_H
 
 #include <QObject>
+#include <QString>
 
 class ISocketAdapter : public QObject
 {
@@ -10,10 +11,10 @@ public:
     explicit ISocketAdapter(QObject *parent = nullptr) : QObject(parent) {}
     virtual ~ISocketAdapter() {}
 
-    virtual void sendString(const QString &str) = 0;
+    virtual void sendString(const QString& str) = 0;
 
 signals:
-    void message(QString msg);
+    void message(const QString& text);
     void disconnected();
 };
 

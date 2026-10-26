@@ -1,13 +1,22 @@
 #include "clientsocketadapter.h"
-#include <QDebug>
 
-ClientSocketAdapter::ClientSocketAdapter(QObject *parent)
-    : SocketAdapter(parent, nullptr)
+ClientSocketAdapter::ClientSocketAdapter(QObject *parent, const QHostAddress &serverAddr, quint16 serverPort)
+    : SocketAdapter(parent, new QUdpSocket(), serverAddr, serverPort)
 {
-    connect(m_ptcpSocket, &QTcpSocket::errorOccurred, this, [](QAbstractSocket::SocketError error) {
-        qDebug() << "[КЛИЕНТ TCP] Ошибка:" << error;
-    });
+    // Привязываем клиентский сокет к случайному свободному порту
+    m_udpSocket->bind(QHostAddress::Any, 0);
 
-    qDebug() << "[КЛИЕНТ TCP] Подключение к 172.20.10.2:5555...";
-    m_ptcpSocket->connectToHost("192.168.8.158", 5555);
+    // Подключаем сигнал readyRead для приема ответов от сервера
+    connect(m_udpSocket, &QUdpSocket::readyRead, this, [this]() {
+        while (m_udpSocket->hasPendingDatagrams()) {
+            QByteArray datagram;
+            datagram.resize(int(m_udpSocket->pendingDatagramSize()));
+            QHostAddress sender;
+            quint16 senderPort;
+            m_udpSocket->readDatagram(datagram.data(), datagram.size(), &sender, &senderPort);
+            processDatagram(datagram);
+        }
+    });
 }
+
+ClientSocketAdapter::~ClientSocketAdapter() {}

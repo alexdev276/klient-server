@@ -2,21 +2,25 @@
 #define SOCKETADAPTER_H
 
 #include "isocketadapter.h"
-#include <QTcpSocket>
+#include <QUdpSocket>
+#include <QHostAddress>
 
-class SocketAdapter : public ISocketAdapter {
+class SocketAdapter : public ISocketAdapter
+{
     Q_OBJECT
 public:
-    SocketAdapter(QObject *parent = nullptr, QTcpSocket *pSock = nullptr);
-    ~SocketAdapter();
-    void sendString(const QString &str) override;
+    explicit SocketAdapter(QObject *parent, QUdpSocket *udpSocket, const QHostAddress &peerAddr, quint16 peerPort);
+    virtual ~SocketAdapter();
 
-protected slots:
-    void on_readyRead();
-    void on_disconnected();
+    void sendString(const QString& str) override;
+
+    // Метод для обработки входящих датаграмм
+    void processDatagram(const QByteArray& datagram);
 
 protected:
-    QTcpSocket *m_ptcpSocket;
+    QUdpSocket *m_udpSocket;
+    QHostAddress m_peerAddress;
+    quint16 m_peerPort;
     int m_msgSize;
 };
 

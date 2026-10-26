@@ -1,55 +1,40 @@
 #include "socketadapter.h"
 #include <QDataStream>
-#include <QByteArray>
 
-SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
-    : ISocketAdapter(parent), m_msgSize(-1)
+SocketAdapter::SocketAdapter(QObject *parent, QUdpSocket *udpSocket, const QHostAddress &peerAddr, quint16 peerPort)
+    : ISocketAdapter(parent), m_udpSocket(udpSocket), m_peerAddress(peerAddr), m_peerPort(peerPort), m_msgSize(-1)
 {
-    if (pSock == nullptr)
-        m_ptcpSocket = new QTcpSocket(this);
-    else
-        m_ptcpSocket = pSock;
-
-    connect(m_ptcpSocket, SIGNAL(readyRead()), this, SLOT(on_readyRead()));
-    connect(m_ptcpSocket, SIGNAL(disconnected()), this, SLOT(on_disconnected()));
 }
 
-SocketAdapter::~SocketAdapter() {
-    if (m_ptcpSocket) {
-        m_ptcpSocket->close();
-        // Qt сам удалит сокет, т.к. parent = this
-    }
-}
+SocketAdapter::~SocketAdapter() {}
 
-void SocketAdapter::sendString(const QString &str) {
+void SocketAdapter::sendString(const QString& str)
+{
     QByteArray block;
     QDataStream sendStream(&block, QIODevice::ReadWrite);
     sendStream << quint16(0) << str;
     sendStream.device()->seek(0);
     sendStream << (quint16)(block.size() - sizeof(quint16));
-    m_ptcpSocket->write(block);
+
+    // Отправка датаграммы конкретному адресату
+    m_udpSocket->writeDatagram(block, m_peerAddress, m_peerPort);
 }
 
-void SocketAdapter::on_readyRead() {
-    QString buff;
-    QDataStream stream(m_ptcpSocket);
-    while (true) {
+void SocketAdapter::processDatagram(const QByteArray& datagram)
+{
+    QDataStream stream(datagram);
+    while (!stream.atEnd()) {
         if (m_msgSize < 0) {
-            if (m_ptcpSocket->bytesAvailable() < (int)sizeof(quint16))
+            if (stream.readRawData((char*)&m_msgSize, sizeof(quint16)) != sizeof(quint16))
                 return;
-            quint16 size;
-            stream >> size;
-            m_msgSize = size;
         } else {
-            if (m_ptcpSocket->bytesAvailable() < m_msgSize)
+            if (stream.bytesAvailable() < m_msgSize)
                 return;
-            stream >> buff;
-            emit message(buff);
-            m_msgSize = -1;
+
+            QByteArray data(m_msgSize, Qt::Uninitialized);
+            stream.readRawData(data.data(), m_msgSize);
+            emit message(QString::fromUtf8(data));
+            m_msgSize = -1; // Сброс для следующего сообщения
         }
     }
-}
-
-void SocketAdapter::on_disconnected() {
-    emit disconnected();
 }

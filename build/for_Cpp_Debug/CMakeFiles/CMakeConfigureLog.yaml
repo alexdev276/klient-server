@@ -15124,3 +15124,159 @@ events:
         - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
         - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/for_Cpp_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake:283 (find_package)"
+      - "/opt/homebrew/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/for_Cpp_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake:235 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew"
+      ENV{PATH}:
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+      CMAKE_INSTALL_PREFIX: "/tmp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew/Cellar/cmake/4.4.3"
+        - "/tmp"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+      CMAKE_MODULE_PATH:
+        - "/opt/homebrew/lib/cmake/Qt6"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/homebrew/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/for_Cpp_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake:235 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew"
+      ENV{PATH}:
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+      CMAKE_INSTALL_PREFIX: "/tmp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew/Cellar/cmake/4.4.3"
+        - "/tmp"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+      CMAKE_MODULE_PATH:
+        - "/opt/homebrew/lib/cmake/Qt6"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
+...

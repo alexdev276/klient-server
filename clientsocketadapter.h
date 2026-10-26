@@ -3,10 +3,12 @@
 
 #include "socketadapter.h"
 
-class ClientSocketAdapter : public SocketAdapter {
+class ClientSocketAdapter : public SocketAdapter
+{
     Q_OBJECT
 public:
-    explicit ClientSocketAdapter(QObject *parent = nullptr);
+    explicit ClientSocketAdapter(QObject *parent, const QHostAddress &serverAddr, quint16 serverPort);
+    ~ClientSocketAdapter();
 };
 
 #endif // CLIENTSOCKETADAPTER_H
