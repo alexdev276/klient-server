@@ -9,12 +9,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "klient-server_autogen/timestamp" "custom" "klient-server_autogen/deps"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/client.cpp" "CMakeFiles/klient-server.dir/client.cpp.o" "gcc" "CMakeFiles/klient-server.dir/client.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/clientsocketadapter.cpp" "CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o" "gcc" "CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/klient-server_autogen/mocs_compilation.cpp" "CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/main.cpp" "CMakeFiles/klient-server.dir/main.cpp.o" "gcc" "CMakeFiles/klient-server.dir/main.cpp.o.d"
-  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/mainwindow.cpp" "CMakeFiles/klient-server.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/klient-server.dir/mainwindow.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/server.cpp" "CMakeFiles/klient-server.dir/server.cpp.o" "gcc" "CMakeFiles/klient-server.dir/server.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversettingsdialog.cpp" "CMakeFiles/klient-server.dir/serversettingsdialog.cpp.o" "gcc" "CMakeFiles/klient-server.dir/serversettingsdialog.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversocketadapter.cpp" "CMakeFiles/klient-server.dir/serversocketadapter.cpp.o" "gcc" "CMakeFiles/klient-server.dir/serversocketadapter.cpp.o.d"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/socketadapter.cpp" "CMakeFiles/klient-server.dir/socketadapter.cpp.o" "gcc" "CMakeFiles/klient-server.dir/socketadapter.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpadapter.cpp" "CMakeFiles/klient-server.dir/udpadapter.cpp.o" "gcc" "CMakeFiles/klient-server.dir/udpadapter.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpclient.cpp" "CMakeFiles/klient-server.dir/udpclient.cpp.o" "gcc" "CMakeFiles/klient-server.dir/udpclient.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpserver.cpp" "CMakeFiles/klient-server.dir/udpserver.cpp.o" "gcc" "CMakeFiles/klient-server.dir/udpserver.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenereclient.cpp" "CMakeFiles/klient-server.dir/vigenereclient.cpp.o" "gcc" "CMakeFiles/klient-server.dir/vigenereclient.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenereserver.cpp" "CMakeFiles/klient-server.dir/vigenereserver.cpp.o" "gcc" "CMakeFiles/klient-server.dir/vigenereserver.cpp.o.d"
+  "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenereworker.cpp" "CMakeFiles/klient-server.dir/vigenereworker.cpp.o" "gcc" "CMakeFiles/klient-server.dir/vigenereworker.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,27 +1,43 @@
 #include <QApplication>
 #include <QInputDialog>
-#include "server.h"
-#include "client.h"
+#include <QMessageBox>
+
+#include "udpserver.h"
+#include "udpclient.h"
+#include "vigenereserver.h"
+#include "vigenereclient.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    bool ok;
-    QString mode = QInputDialog::getItem(nullptr, "Выбор режима",
-                                         "Запустить как:",
-                                         QStringList() << "Сервер" << "Клиент",
-                                         0, false, &ok);
-    if (!ok) return 0;
+    QStringList options;
+    options << "ЛР6: UDP Сервер (Широковещательная рассылка)"
+            << "ЛР6: UDP Клиент (Прием сообщений)"
+            << "ЛР7: Сервер Виженера (Раздача задач)"
+            << "ЛР7: Клиент Виженера (Подбор ключа)";
 
-    if (mode == "Сервер") {
-        Server *s = new Server(5555, 5556);
-        s->show();
-        return a.exec();
+    bool ok;
+    QString choice = QInputDialog::getItem(nullptr, "Выбор лабораторной работы",
+                                           "Выберите приложение для запуска:",
+                                           options, 0, false, &ok);
+    if (!ok || choice.isEmpty()) return 0;
+
+    QWidget *window = nullptr;
+
+    if (choice == options[0]) {
+        window = new UdpServer();
+    } else if (choice == options[1]) {
+        window = new UdpClient();
+    } else if (choice == options[2]) {
+        window = new VigenereServer();
+    } else if (choice == options[3]) {
+        window = new VigenereClient();
     }
-    else {
-        Client w;
-        w.show();
-        return a.exec();
+
+    if (window) {
+        window->show();
     }
+
+    return a.exec();
 }

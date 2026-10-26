@@ -36,6 +36,11 @@
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Linker/AppleClang.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -102,52 +107,6 @@
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageMessage.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
@@ -158,6 +117,10 @@
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
 		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
 		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake",
@@ -250,6 +213,10 @@
 		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
 		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
 		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake",
@@ -398,19 +365,6 @@
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
@@ -452,6 +406,52 @@
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -501,7 +501,7 @@
 		"/opt/homebrew/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6/macos/Info.plist.app.in"
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/GNUInstallDirs.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server",
 	"CROSS_CONFIG" : false,
@@ -510,21 +510,33 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/client.h",
+			"MU",
+			"EWIEGA46WW/moc_client.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/clientsocketadapter.h",
+			"MU",
+			"EWIEGA46WW/moc_clientsocketadapter.cpp",
+			null
+		],
+		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/isocketadapter.h",
 			"MU",
 			"EWIEGA46WW/moc_isocketadapter.cpp",
 			null
 		],
 		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/mainwindow.h",
-			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/server.h",
 			"MU",
 			"EWIEGA46WW/moc_server.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversettingsdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_serversettingsdialog.cpp",
 			null
 		],
 		[
@@ -537,6 +549,42 @@
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/socketadapter.h",
 			"MU",
 			"EWIEGA46WW/moc_socketadapter.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpadapter.h",
+			"MU",
+			"EWIEGA46WW/moc_udpadapter.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpclient.h",
+			"MU",
+			"EWIEGA46WW/moc_udpclient.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpserver.h",
+			"MU",
+			"EWIEGA46WW/moc_udpserver.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereclient.h",
+			"MU",
+			"EWIEGA46WW/moc_vigenereclient.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereserver.h",
+			"MU",
+			"EWIEGA46WW/moc_vigenereserver.cpp",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereworker.h",
+			"MU",
+			"EWIEGA46WW/moc_vigenereworker.cpp",
 			null
 		]
 	],
@@ -564,12 +612,12 @@
 		"/opt/homebrew/lib/QtCore.framework",
 		"/opt/homebrew/share/qt/mkspecs/macx-clang",
 		"/opt/homebrew/include",
-		"/opt/homebrew/lib/QtWidgets.framework/Headers",
-		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtGui.framework/Headers",
 		"/opt/homebrew/lib/QtGui.framework",
 		"/opt/homebrew/lib/QtNetwork.framework/Headers",
 		"/opt/homebrew/lib/QtNetwork.framework",
+		"/opt/homebrew/lib/QtWidgets.framework/Headers",
+		"/opt/homebrew/lib/QtWidgets.framework",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
@@ -609,17 +657,27 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/client.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/clientsocketadapter.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/mainwindow.cpp",
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/server.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/server.cpp",
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversettingsdialog.cpp",
 			"MU",
 			null
 		],
@@ -630,6 +688,36 @@
 		],
 		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/socketadapter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpadapter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpclient.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpserver.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereclient.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereserver.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereworker.cpp",
 			"MU",
 			null
 		]

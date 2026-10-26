@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/CMakeLists.txt"
-  ".qt/info_plist/klient_server/Info.plist"
   ".qtcreator/cmake-helper/maintenance_tool_provider.cmake"
   ".qtcreator/cmake-helper/package-manager.cmake"
   ".qtcreator/cmake-helper/qtcreator-project.cmake"
@@ -104,7 +103,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
   "/opt/homebrew/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
   "/opt/homebrew/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake"
-  "/opt/homebrew/lib/cmake/Qt6/macos/Info.plist.app.in"
   "/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake"
   "/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
   "/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake"
@@ -365,13 +363,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  ".qt/info_plist/klient_server/Info.plist"
   "CMakeFiles/klient-server_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
-  "klient-server.app/Contents/MacOS"
-  "klient-server.app/Contents/Info.plist"
-  "klient-server.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

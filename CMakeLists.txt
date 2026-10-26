@@ -18,6 +18,11 @@ qt_add_executable(klient-server
     server.h server.cpp
     client.h client.cpp
     serversettingsdialog.h serversettingsdialog.cpp
+    udpserver.h udpserver.cpp
+    udpclient.h udpclient.cpp
+    vigenereworker.h vigenereworker.cpp
+    vigenereserver.h vigenereserver.cpp
+    vigenereclient.h vigenereclient.cpp
 )
 
 target_link_libraries(klient-server PRIVATE
