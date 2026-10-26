@@ -16,7 +16,6 @@ void SocketAdapter::sendString(const QString& str)
     sendStream.device()->seek(0);
     sendStream << (quint16)(block.size() - sizeof(quint16));
 
-    // Отправка датаграммы конкретному адресату
     m_udpSocket->writeDatagram(block, m_peerAddress, m_peerPort);
 }
 
@@ -25,16 +24,19 @@ void SocketAdapter::processDatagram(const QByteArray& datagram)
     QDataStream stream(datagram);
     while (!stream.atEnd()) {
         if (m_msgSize < 0) {
-            if (stream.readRawData((char*)&m_msgSize, sizeof(quint16)) != sizeof(quint16))
-                return;
+            // Читаем размер сообщения (2 байта)
+            if (stream.device()->bytesAvailable() < static_cast<qint64>(sizeof(quint16)))
+                break;
+            stream >> m_msgSize;
         } else {
-            if (stream.bytesAvailable() < m_msgSize)
-                return;
+            // Читаем само сообщение
+            if (stream.device()->bytesAvailable() < static_cast<qint64>(m_msgSize))
+                break;
 
             QByteArray data(m_msgSize, Qt::Uninitialized);
             stream.readRawData(data.data(), m_msgSize);
             emit message(QString::fromUtf8(data));
-            m_msgSize = -1; // Сброс для следующего сообщения
+            m_msgSize = -1; // Сброс для следующего пакета
         }
     }
 }

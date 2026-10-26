@@ -13,8 +13,6 @@ public:
     virtual ~SocketAdapter();
 
     void sendString(const QString& str) override;
-
-    // Метод для обработки входящих датаграмм
     void processDatagram(const QByteArray& datagram);
 
 protected:

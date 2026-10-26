@@ -1014,63 +1014,28 @@ CMakeFiles/klient-server.dir/main.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qpicture.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qiodevice.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayout.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/QUdpSocket \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qudpsocket.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetworkglobal.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetwork-config.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetworkexports.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qabstractsocket.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qiodevice.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qhostaddress.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QTimer \
-  /opt/homebrew/lib/QtCore.framework/Headers/qtimer.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/lib/QtCore.framework/Headers/QMap \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTextEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtextedit.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereserver.h \
-  /opt/homebrew/lib/QtNetwork.framework/Headers/QHostAddress \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereclient.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QThreadPool \
-  /opt/homebrew/lib/QtCore.framework/Headers/qthreadpool.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qthread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qrunnable.h
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/client.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/clientsocketadapter.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/isocketadapter.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtNetwork.framework/Headers/QHostAddress

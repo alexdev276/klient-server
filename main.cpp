@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
     QWidget *window = nullptr;
 
     if (choice == options[0]) {
-        window = new Server(5555); // Запуск сервера на порту 5555
+        window = new Server(5555);
     } else if (choice == options[1]) {
-        window = new Client();     // Запуск клиента
+        window = new Client();
     }
 
     if (window) {

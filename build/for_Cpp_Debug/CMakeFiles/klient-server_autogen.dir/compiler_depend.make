@@ -247,7 +247,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/bit_reference.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/complex.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/functional.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h \
@@ -257,10 +256,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/memory_resource.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/set.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h \
@@ -402,8 +399,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h \
@@ -434,8 +429,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h \
@@ -484,7 +477,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_base_of.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_bounded_array.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_callable.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_compound.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_const.h \
@@ -602,7 +594,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
@@ -622,18 +613,14 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cwchar \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cwctype \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
@@ -645,13 +632,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -663,7 +645,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
@@ -785,24 +766,10 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/main.cpp \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.cpp \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversettingsdialog.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversettingsdialog.h \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.cpp \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.h \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.cpp \
   /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpadapter.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpadapter.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereclient.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereclient.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereserver.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereserver.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereworker.cpp \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereworker.h \
   /opt/homebrew/Cellar/cmake/4.4.3/bin/cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCXXInformation.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
@@ -844,17 +811,9 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/UnixPaths.cmake \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QByteArray \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QHash \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QList \
+  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QMap \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QObject \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRect \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRunnable \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QSize \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QSizeF \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QString \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QThreadPool \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q20bit.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
@@ -864,8 +823,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q20utility.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q23type_traits.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q23utility.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qabstracteventdispatcher.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qalloc.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
@@ -876,7 +833,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
@@ -894,15 +850,10 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreapplication.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreapplication_platform.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qendian.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qeventloop.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qfloat16.h \
@@ -921,7 +872,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlist.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmap.h \
@@ -931,7 +881,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qminmax.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qnamespace.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qnumeric.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qobject.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qobject_impl.h \
@@ -943,8 +892,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrunnable.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qset.h \
@@ -980,9 +927,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtformat_impl.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qthread.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qthreadpool.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -1000,101 +944,54 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/QTransform \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qabstracttextdocumentlayout.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qcursor.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qevent.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfont.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontdatabase.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontvariableaxis.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qglyphrun.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qguiapplication.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qguiapplication_platform.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qicon.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qimage.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qinputmethod.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpen.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrawfont.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qscreen_platform.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextformat.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextlayout.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvalidator.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QHostAddress \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QTcpServer \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QTcpSocket \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QUdpSocket \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qhostaddress.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtcpserver.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtcpsocket.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetwork-config.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkexports.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qudpsocket.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QComboBox \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QDialog \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QDoubleSpinBox \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QPlainTextEdit \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QTextEdit \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qplaintextedit.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qslider.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qspinbox.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
-  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtextedit.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
@@ -1416,6 +1313,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake:
@@ -1454,7 +1353,11 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
+/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargetsPrecheck.cmake:
 
@@ -1548,6 +1451,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargetsPrecheck.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake:
@@ -1566,9 +1471,13 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
 
+/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
+
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargetsPrecheck.cmake:
+
+/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
@@ -1577,6 +1486,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
+
+/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
@@ -1601,6 +1512,12 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginConfig.cmake:
 
@@ -1642,9 +1559,15 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
 
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
+
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
@@ -1670,6 +1593,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
+/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
+
 /opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/FindWrapOpenGL.cmake:
@@ -1680,31 +1605,13 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtextedit.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qframe.h:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QWidget:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QTextEdit:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QPushButton:
 
@@ -1714,11 +1621,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetwork-config.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtcpsocket.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QTcpSocket:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QTcpServer:
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QHostAddress:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h:
 
@@ -1730,25 +1633,15 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextformat.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qscreen.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrgba64.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrgb.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qregion.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpicture.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QHostAddress:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h:
 
 /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
@@ -1758,23 +1651,11 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qicon.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qguiapplication_platform.h:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qguiapplication.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontvariableaxis.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h:
 
-/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontdatabase.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfont.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qevent.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qcolor.h:
 
@@ -1783,16 +1664,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qbitmap.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qaction.h:
-
-/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qabstracttextdocumentlayout.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QTextEdit:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/QTransform:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h:
 
@@ -1826,10 +1697,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtimer.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qthread.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtformat_impl.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h:
@@ -1837,8 +1704,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtdeprecationdefinitions.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtcoreexports.h:
 
@@ -1878,8 +1743,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrefcount.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrect.h:
@@ -1904,6 +1767,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmetatype.h:
 
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmath.h:
+
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmargins.h:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets-release.cmake:
@@ -1911,8 +1776,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmap.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlocale.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlist.h:
 
@@ -1930,11 +1793,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qglobal.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qfunctionpointer.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qplaintextedit.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qfunctionaltools_impl.h:
 
@@ -1952,15 +1811,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qeventloop.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreapplication_platform.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h:
 
@@ -2012,8 +1863,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qalloc.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q23utility.h:
@@ -2026,23 +1875,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QTimer:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QThreadPool:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QSizeF:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRunnable:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRect:
-
-/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QList:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QHash:
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QMap:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake:
 
@@ -2051,8 +1884,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Darwin.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qthreadpool.h:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang.cmake:
 
@@ -2076,23 +1907,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckCommon.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/GNUInstallDirs.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindVulkan.cmake:
-
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindThreads.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageMessage.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake:
 
@@ -2100,61 +1915,43 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindOpenGL.cmake:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/Clang.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/AppleClang-CXX.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/GNU.cmake:
+
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckLibraryExists.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeInitializeConfigs.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeGenericSystem.cmake:
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeLanguageInformation.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/noexcept_move_assign_container.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
 /opt/homebrew/Cellar/cmake/4.4.3/bin/cmake:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereworker.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereworker.cpp:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereclient.h:
-
-/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereclient.cpp:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvectornd.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpadapter.h:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.cpp:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QDialog:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversettingsdialog.h:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.cpp:
 
@@ -2192,11 +1989,19 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/types.h:
 
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/interference_size.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_short.h:
 
@@ -2230,9 +2035,11 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/UnixPaths.cmake:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_nlink_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mbstate_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
 
@@ -2262,8 +2069,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_caddr_t.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h:
@@ -2271,6 +2076,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.cpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h:
 
@@ -2312,8 +2119,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/nl_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/types.h:
@@ -2321,6 +2126,10 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/endian.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/istream.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/version:
 
@@ -2354,47 +2163,17 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mbstate_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:
-
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/noexcept_move_assign_container.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/exception:
 
@@ -2421,8 +2200,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qcursor.h:
 
@@ -2480,10 +2257,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/no_destroy.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.cpp:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qgenericatomic.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QString:
@@ -2504,8 +2277,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exception_guard.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QComboBox:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/element_count.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
@@ -2521,8 +2292,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_locale_t.h:
 
@@ -2543,8 +2312,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/empty.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qrawfont.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:
 
@@ -2572,19 +2339,17 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
 
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageMessage.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QSize:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const_ref.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qrunnable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h:
 
@@ -2604,9 +2369,7 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
 
-/opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/deque:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
 
@@ -2622,15 +2385,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_lexicographically_comparable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversettingsdialog.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_copyable.h:
 
@@ -2652,6 +2409,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
@@ -2665,6 +2424,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/reference_constructs_from_temporary.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckIncludeFileCXX.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h:
 
@@ -2700,9 +2461,13 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_member_pointer.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
+/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/bit_log2.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/scope_guard.h:
 
@@ -2719,8 +2484,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qsysinfo.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreapplication.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
@@ -2760,8 +2523,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_always_bitcastable.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qtextlayout.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
@@ -2771,6 +2532,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/identity.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeInitializeConfigs.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
 
@@ -2814,8 +2577,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QPlainTextEdit:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_cv_quals.h:
@@ -2857,12 +2618,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargetsPrecheck.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
@@ -2930,12 +2685,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h:
 
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/num.h:
@@ -2944,19 +2693,19 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_reduce.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/merge.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_null_pointer.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/reduce.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wbuffer_convert.h:
 
@@ -3014,8 +2763,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
@@ -3027,12 +2774,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpadapter.cpp:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmath.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
 
@@ -3100,6 +2841,10 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/copysign.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h:
@@ -3116,9 +2861,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qinputmethod.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/inverse_trigonometric_functions.h:
 
@@ -3168,15 +2913,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/GNU.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets-release.cmake:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereserver.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:
 
@@ -3188,13 +2927,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
@@ -3268,9 +3003,7 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/istream.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginAdditionalTargetInfo.cmake:
 
@@ -3289,10 +3022,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
 
@@ -3396,10 +3125,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h:
@@ -3433,8 +3158,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h:
 
@@ -3490,8 +3213,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/support/apple.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QByteArray:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
@@ -3503,6 +3224,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindVulkan.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake:
 
@@ -3545,20 +3268,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/reduce.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qabstracteventdispatcher.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckIncludeFileCXX.cmake:
-
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.cpp:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h:
 
@@ -3612,7 +3321,7 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/exception.h:
 
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.h:
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckCommon.cmake:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.h:
 
@@ -3635,6 +3344,10 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h:
 
@@ -3670,8 +3383,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QLabel:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/popcount.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_zero.h:
@@ -3681,8 +3392,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_sync.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtcpserver.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
 
@@ -3720,17 +3429,21 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qspinbox.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/bit_cast.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/set.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_temporary_buffer.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
@@ -3752,12 +3465,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/AppleClang-CXX.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
-
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional:
@@ -3770,6 +3477,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
 
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/GNUInstallDirs.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/pmr.h:
@@ -3779,6 +3488,12 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h:
 
@@ -3818,10 +3533,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeLanguageInformation.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
@@ -3829,10 +3540,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/check_grouping.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets-release.cmake:
 
@@ -3847,6 +3554,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/ranges_iota.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
 
@@ -3874,6 +3583,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/platform.h:
 
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeGenericSystem.cmake:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h:
@@ -3881,6 +3592,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h:
 
@@ -3908,6 +3621,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/merge.h:
+
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake:
@@ -3921,8 +3636,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
 
 CMakeFiles/4.4.3/CMakeSystem.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/QDoubleSpinBox:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
@@ -3964,8 +3677,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h:
 
-/Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenereserver.cpp:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
@@ -4004,7 +3715,7 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/support.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qslider.h:
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindOpenGL.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:
 
@@ -4078,8 +3789,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/aliasing_iterator.h:
@@ -4088,23 +3797,15 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/Clang.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomRelationshipHelpers.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvalidator.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qglyphrun.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_count.h:
 
@@ -4126,17 +3827,7 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/map.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qvector2d.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtGui.framework/Versions/A/Headers/qscreen_platform.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/bit_log2.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h:
 
@@ -4159,8 +3850,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h:
 
@@ -4199,3 +3888,5 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_union.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:

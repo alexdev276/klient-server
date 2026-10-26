@@ -365,47 +365,6 @@
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake",
-		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
@@ -452,6 +411,47 @@
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake",
+		"/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -534,12 +534,6 @@
 			null
 		],
 		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversettingsdialog.h",
-			"MU",
-			"EWIEGA46WW/moc_serversettingsdialog.cpp",
-			null
-		],
-		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversocketadapter.h",
 			"MU",
 			"EWIEGA46WW/moc_serversocketadapter.cpp",
@@ -549,42 +543,6 @@
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/socketadapter.h",
 			"MU",
 			"EWIEGA46WW/moc_socketadapter.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpadapter.h",
-			"MU",
-			"EWIEGA46WW/moc_udpadapter.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpclient.h",
-			"MU",
-			"EWIEGA46WW/moc_udpclient.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpserver.h",
-			"MU",
-			"EWIEGA46WW/moc_udpserver.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereclient.h",
-			"MU",
-			"EWIEGA46WW/moc_vigenereclient.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereserver.h",
-			"MU",
-			"EWIEGA46WW/moc_vigenereserver.cpp",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereworker.h",
-			"MU",
-			"EWIEGA46WW/moc_vigenereworker.cpp",
 			null
 		]
 	],
@@ -614,10 +572,10 @@
 		"/opt/homebrew/include",
 		"/opt/homebrew/lib/QtGui.framework/Headers",
 		"/opt/homebrew/lib/QtGui.framework",
-		"/opt/homebrew/lib/QtNetwork.framework/Headers",
-		"/opt/homebrew/lib/QtNetwork.framework",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
+		"/opt/homebrew/lib/QtNetwork.framework/Headers",
+		"/opt/homebrew/lib/QtNetwork.framework",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
@@ -677,47 +635,12 @@
 			null
 		],
 		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversettingsdialog.cpp",
-			"MU",
-			null
-		],
-		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/serversocketadapter.cpp",
 			"MU",
 			null
 		],
 		[
 			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/socketadapter.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpadapter.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpclient.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/udpserver.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereclient.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereserver.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/sergejzemskov/\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442/\u0418\u043d\u0444\u043e\u043a\u043e\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b/Programs/klient-server/vigenereworker.cpp",
 			"MU",
 			null
 		]
