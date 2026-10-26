@@ -4,7 +4,7 @@ project(klient-server LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Network Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Network Widgets Concurrent)
 
 qt_standard_project_setup()
 
@@ -18,8 +18,16 @@ qt_add_executable(klient-server
     server.h server.cpp
     client.h client.cpp
     serversettingsdialog.h serversettingsdialog.cpp
+    udpchat.h udpchat.cpp
+    vigenere.h vigenere.cpp
+    keysearchserver.h keysearchserver.cpp
+    keysearchclient.h keysearchclient.cpp
 )
 
 target_link_libraries(klient-server PRIVATE
-    Qt6::Core Qt6::Gui Qt6::Network Qt6::Widgets
+    Qt6::Core Qt6::Gui Qt6::Network Qt6::Widgets Qt6::Concurrent
 )
+
+# Файлы рядом с исполняемым файлом: набор ключевых фраз и конфигурация портов.
+configure_file(keys.txt  ${CMAKE_CURRENT_BINARY_DIR}/keys.txt  COPYONLY)
+configure_file(kmzi.ini  ${CMAKE_CURRENT_BINARY_DIR}/kmzi.ini  COPYONLY)
