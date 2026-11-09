@@ -783,11 +783,9 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/Clang.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Compiler/GNU.cmake \
-  /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindOpenGL.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindPackageMessage.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindThreads.cmake \
-  /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindVulkan.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/GNUInstallDirs.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
@@ -797,7 +795,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Linker/AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Linker/AppleClang.cmake \
-  /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/MacroAddFileDependencies.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang.cmake \
@@ -806,7 +803,9 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake \
   /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/UnixPaths.cmake \
+  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QHash \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QObject \
+  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QPair \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRunnable \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QSocketNotifier \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QString \
@@ -852,6 +851,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qgenericatomic.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qglobal.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
+  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
@@ -920,6 +920,7 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QHostAddress \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QUdpSocket \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qhostaddress.h \
@@ -928,8 +929,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h \
   /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qudpsocket.h \
   /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake \
-  /opt/homebrew/lib/cmake/Qt6/FindWrapOpenGL.cmake \
-  /opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
   /opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake \
   /opt/homebrew/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
   /opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
@@ -1034,139 +1033,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake \
   /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
   /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
   /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
@@ -1201,55 +1067,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
   /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
   /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake \
   /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
-  /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake
+  /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargetsPrecheck.cmake
 
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake:
 
@@ -1260,6 +1079,8 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake:
 
@@ -1283,148 +1104,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake:
 
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
-
 /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
@@ -1441,8 +1120,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets-release.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargetsPrecheck.cmake:
@@ -1452,8 +1129,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake:
 
@@ -1474,8 +1149,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CorePlugins.cmake:
 
@@ -1515,8 +1188,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
-
 /opt/homebrew/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
@@ -1526,8 +1197,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/lib/cmake/Qt6/QtInstallPaths.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtFeature.cmake:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
 
@@ -1539,23 +1208,19 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake:
 
-/opt/homebrew/lib/cmake/Qt6/FindWrapOpenGL.cmake:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkexports.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/qtnetwork-config.h:
 
-/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h:
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtNetwork.framework/Versions/A/Headers/QHostAddress:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargetsPrecheck.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h:
 
@@ -1647,11 +1312,11 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qiodevice.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qhash.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qglobal.h:
 
@@ -1667,8 +1332,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qflags.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h:
@@ -1676,10 +1339,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qcontainerfwd.h:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qconstructormacros.h:
 
@@ -1717,11 +1376,11 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q20bit.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
-
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QRunnable:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QHash:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake:
 
@@ -1730,12 +1389,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Darwin.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindThreads.cmake:
 
@@ -1766,8 +1419,6 @@ klient-server_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Plat
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeLanguageInformation.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/noexcept_move_assign_container.h:
 
@@ -1862,8 +1513,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_port_t.h:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qnumeric.h:
 
@@ -1963,8 +1612,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
@@ -2011,15 +1658,11 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargetsPrecheck.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:
 
@@ -2038,8 +1681,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/container_traits.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qttypetraits.h:
 
@@ -2105,8 +1746,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/ptrcheck.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integer_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h:
@@ -2133,13 +1772,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/vector.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
@@ -2150,6 +1785,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/result_of.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
 
@@ -2223,19 +1860,17 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/reference_constructs_from_temporary.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-Clang.cmake:
 
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.cpp:
 
@@ -2263,15 +1898,11 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_member_pointer.h:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/bit_log2.h:
 
@@ -2298,8 +1929,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/locale.h:
 
@@ -2369,12 +1998,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
 
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
@@ -2389,8 +2012,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-release.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h:
@@ -2401,11 +2022,7 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
-
 .qtcreator/cmake-helper/package-manager.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlogging.h:
 
@@ -2427,8 +2044,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/throw_system_error.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/compare:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake:
@@ -2445,13 +2060,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-release.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
-
-/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h:
 
@@ -2498,8 +2109,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
@@ -2597,8 +2206,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-release.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/variant.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/array_cookie.h:
@@ -2618,8 +2225,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/align.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destroy.h:
 
@@ -2659,8 +2264,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/pad_and_output.h:
 
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
@@ -2669,15 +2272,11 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/money.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/get_c_locale.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/align_val_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
-
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
 
@@ -2692,8 +2291,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/rounding_functions.h:
 
@@ -2725,8 +2322,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_end.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargetsPrecheck.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
@@ -2734,8 +2329,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
-
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
 
@@ -2763,8 +2356,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/advance.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake:
-
 /opt/homebrew/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/_endian.h:
@@ -2776,8 +2367,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex:
 
@@ -2817,13 +2406,9 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_def.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-release.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/qos.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
 
@@ -2842,8 +2427,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake:
 
@@ -2907,8 +2490,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_key_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/dependent_type.h:
@@ -2916,8 +2497,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/CMakeLists.txt:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qtcoreglobal.h:
 
@@ -2933,8 +2512,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
@@ -2946,8 +2523,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-release.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype:
 
@@ -2969,11 +2544,7 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-release.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
 
@@ -2988,10 +2559,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets-release.cmake:
 
 /opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Linker/AppleClang-CXX.cmake:
 
@@ -3037,10 +2604,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindVulkan.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/regular.h:
@@ -3054,6 +2617,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
+
+/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/bit_reference.h:
 
@@ -3109,8 +2674,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
@@ -3124,8 +2687,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginTargetsPrecheck.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:
 
@@ -3147,8 +2708,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countr.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_types.h:
@@ -3164,6 +2723,8 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/QPair:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/to_gcc_order.h:
 
@@ -3257,8 +2818,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/empty.h:
@@ -3272,8 +2831,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional:
 
@@ -3311,8 +2868,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:
@@ -3324,8 +2879,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h:
 
@@ -3353,8 +2906,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargetsPrecheck.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
@@ -3378,8 +2929,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fdim.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/concepts:
 
@@ -3415,10 +2964,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
-
-/opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/limits:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/move.h:
@@ -3430,8 +2975,6 @@ CMakeFiles/4.4.3/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/merge.h:
-
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake:
 
@@ -3453,19 +2996,13 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h:
 
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
-
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
 
-/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:
-
-/opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargetsPrecheck.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/invert_if.h:
 
@@ -3487,8 +3024,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stdarg_va_copy.h:
@@ -3509,15 +3044,11 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/support.h:
 
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/FindOpenGL.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/includes.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
 
@@ -3625,8 +3156,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
@@ -3637,13 +3166,9 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:
 
-/opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types.h:
-
-/opt/homebrew/Cellar/cmake/4.4.3/share/cmake/Modules/MacroAddFileDependencies.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/error_functions.h:
 
@@ -3674,8 +3199,6 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_union.h:
 

@@ -16,8 +16,10 @@ using namespace std;
 
 static const int kRetryIntervalMs = 3000;
 static const int kMaxAttempts = 5;
+static const int kRegisterIntervalMs = 2000;
 
-UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort, QObject *parent)
+UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort,
+                     const QString &name, QObject *parent)
     : QObject(parent)
     , udpSocket(new QUdpSocket(this))
     , m_mode(mode)
@@ -26,9 +28,14 @@ UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort, QO
     , m_serverPort(serverPort)
     , m_retryTimer(nullptr)
     , m_attempts(0)
+    , m_name(name.trimmed())
+    , m_regTimer(nullptr)
+    , m_serverKnown(false)
 {
     if (m_serverPort == 0)
         m_serverPort = (m_mode == 6) ? 5555 : 50050;
+    if (m_name.isEmpty())
+        m_name = QStringLiteral("Клиент");
 
     if (!udpSocket->bind(QHostAddress::AnyIPv4, 0))
         cerr << "[Клиент] Не удалось занять локальный UDP-порт" << endl;
@@ -38,9 +45,17 @@ UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort, QO
     if (m_mode == 6) {
         m_stdinNotifier = new QSocketNotifier(STDIN_FILENO, QSocketNotifier::Read, this);
         connect(m_stdinNotifier, &QSocketNotifier::activated, this, &UdpClient::onStdinReady);
-        cout << "[ЛР6] Клиент запущен. Сервер: " << m_serverAddress.toString().toStdString()
-             << ':' << m_serverPort << endl;
+
+        m_regTimer = new QTimer(this);
+        m_regTimer->setInterval(kRegisterIntervalMs);
+        connect(m_regTimer, &QTimer::timeout, this, &UdpClient::onRegisterTick);
+
+        cout << "[ЛР6] Клиент «" << m_name.toStdString() << "» запущен. Сервер: "
+             << m_serverAddress.toString().toStdString() << ':' << m_serverPort << endl;
+        cout << "[ЛР6] Регистрация на сервере..." << endl;
         cout << "[ЛР6] Введите сообщение (exit для выхода):" << endl;
+
+        QTimer::singleShot(0, this, &UdpClient::onRegisterTick);
     } else {
         m_retryTimer = new QTimer(this);
         m_retryTimer->setSingleShot(true);
@@ -51,10 +66,65 @@ UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort, QO
     }
 }
 
+void UdpClient::sendLab6Hello()
+{
+    udpSocket->writeDatagram(("HELLO:" + m_name).toUtf8(), m_serverAddress, m_serverPort);
+}
+
+void UdpClient::sendLab6Bye()
+{
+    if (m_serverKnown)
+        udpSocket->writeDatagram("BYE", m_serverAddress, m_serverPort);
+}
+
+void UdpClient::onRegisterTick()
+{
+    if (m_serverKnown)
+        return;
+    sendLab6Hello();
+}
+
 void UdpClient::sendLab6Message(const QString &msg)
 {
-    udpSocket->writeDatagram(msg.toUtf8(), m_serverAddress, m_serverPort);
-    cout << "[ЛР6] Отправлено: " << msg.toStdString() << endl;
+    // Если сервер ещё не подтвердил регистрацию, отправляем HELLO перед сообщением,
+    // чтобы сервер знал имя отправителя.
+    if (!m_serverKnown)
+        sendLab6Hello();
+
+    cout << "[ЛР6] [я] " << msg.toStdString() << endl;
+    udpSocket->writeDatagram(("MSG:" + msg).toUtf8(), m_serverAddress, m_serverPort);
+}
+
+void UdpClient::handleLab6Reply(const QString &msg)
+{
+    const int sep = msg.indexOf(':');
+    const QString cmd = (sep < 0) ? msg : msg.left(sep);
+    const QString rest = (sep < 0) ? QString() : msg.mid(sep + 1);
+
+    if (cmd == "WELCOME") {
+        if (!m_serverKnown) {
+            m_serverKnown = true;
+            if (m_regTimer)
+                m_regTimer->stop();
+            cout << "[ЛР6] Сервер найден: " << m_serverAddress.toString().toStdString()
+                 << ':' << m_serverPort << endl;
+        }
+        return;
+    }
+
+    if (cmd == "CHAT") {
+        const int p = rest.indexOf(':');
+        const QString author = (p < 0) ? QStringLiteral("Сервер") : rest.left(p);
+        const QString text = (p < 0) ? rest : rest.mid(p + 1);
+
+        if (author == QStringLiteral("СИСТЕМА"))
+            cout << "[ЛР6] — " << text.toStdString() << endl;
+        else
+            cout << "[ЛР6] [" << author.toStdString() << "] " << text.toStdString() << endl;
+        return;
+    }
+
+    cout << "[ЛР6] Сервер: " << msg.toStdString() << endl;
 }
 
 void UdpClient::requestLab7Task()
@@ -89,13 +159,14 @@ void UdpClient::onStdinReady()
 {
     string line;
     if (!getline(cin, line)) {
-        if (m_stdinNotifier)
-            m_stdinNotifier->setEnabled(false);
+        sendLab6Bye();
+        QCoreApplication::quit();
         return;
     }
 
     const QString msg = QString::fromStdString(line).trimmed();
     if (msg == "exit") {
+        sendLab6Bye();
         QCoreApplication::quit();
         return;
     }
@@ -123,7 +194,7 @@ void UdpClient::readPendingDatagrams()
         const QString msg = QString::fromUtf8(datagram.data()).trimmed();
 
         if (m_mode == 6) {
-            cout << "[ЛР6] Ответ сервера: " << msg.toStdString() << endl;
+            handleLab6Reply(msg);
             continue;
         }
 

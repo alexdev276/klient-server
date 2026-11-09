@@ -941,6 +941,7 @@ CMakeFiles/klient-server.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qdeadlinetimer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qnativeinterface.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
@@ -957,20 +958,24 @@ CMakeFiles/klient-server.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
-  /opt/homebrew/lib/QtNetwork.framework/Headers/QUdpSocket \
-  /opt/homebrew/lib/QtNetwork.framework/Headers/qudpsocket.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.h \
+  /opt/homebrew/lib/QtNetwork.framework/Headers/QHostAddress \
+  /opt/homebrew/lib/QtNetwork.framework/Headers/qhostaddress.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetworkglobal.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetwork-config.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qtnetworkexports.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qshareddata.h \
   /opt/homebrew/lib/QtNetwork.framework/Headers/qabstractsocket.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qiodevice.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qspan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /opt/homebrew/lib/QtCore.framework/Headers/q20iterator.h \
-  /opt/homebrew/lib/QtNetwork.framework/Headers/qhostaddress.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qshareddata.h \
-  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
   /opt/homebrew/lib/QtCore.framework/Headers/QSocketNotifier \
-  /opt/homebrew/lib/QtCore.framework/Headers/qsocketnotifier.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qsocketnotifier.h \
+  /opt/homebrew/lib/QtNetwork.framework/Headers/QUdpSocket \
+  /opt/homebrew/lib/QtNetwork.framework/Headers/qudpsocket.h \
+  /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QHash \
+  /opt/homebrew/lib/QtCore.framework/Headers/qhash.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPair

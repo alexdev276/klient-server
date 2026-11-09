@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
         cout << "========================================\n";
         cout << "Выберите режим работы:\n";
         cout << "  1 - server6 (UDP сервер для ЛР6, порт 5555)\n";
-        cout << "  2 - client6 (UDP клиент для ЛР6)\n";
+        cout << "  2 - client6 (UDP клиент для ЛР6, сервер 192.168.8.159:5555)\n";
         cout << "  3 - server7 (Сервер распределённого поиска ЛР7, порт 50050)\n";
-        cout << "  4 - client7 (Клиент распределённого поиска ЛР7)\n";
+        cout << "  4 - client7 (Клиент распределённого поиска ЛР7, сервер 192.168.8.159:50050)\n";
         cout << "Введите номер: ";
         cout.flush();
 
@@ -64,7 +64,8 @@ int main(int argc, char *argv[])
     if (!isServer && !isClient) {
         cout << "Неизвестный режим: " << mode << "\n"
              << "Использование: klient-server server6|server7 [порт]\n"
-             << "               klient-server client6|client7 [адрес] [порт]" << endl;
+             << "               klient-server client6 [адрес] [порт] [имя]\n"
+             << "               klient-server client7 [адрес] [порт]" << endl;
         return 1;
     }
 
@@ -80,10 +81,11 @@ int main(int argc, char *argv[])
     }
 
     const QString host = (argc > 2) ? QString::fromUtf8(argv[2])
-                                    : QStringLiteral("127.0.0.1");
+                                    : QStringLiteral("192.168.8.159");
     const quint16 port = (argc > 3) ? parsePort(argv[3], defaultPort) : defaultPort;
+    const QString name = (lab6 && argc > 4) ? QString::fromUtf8(argv[4]) : QString();
 
-    UdpClient client(lab6 ? 6 : 7, host, port);
+    UdpClient client(lab6 ? 6 : 7, host, port, name);
     if (!lab6)
         client.requestLab7Task();
 
