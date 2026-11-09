@@ -1,94 +1,171 @@
 // udpclient.cpp
 #include "udpclient.h"
 #include "workerthread.h"
+
+#include <QCoreApplication>
 #include <QNetworkDatagram>
 #include <QStringList>
 #include <QThreadPool>
-#include <QCoreApplication> // <--- ДОБАВЛЕНА ЭТА СТРОКА
+#include <QTimer>
+
 #include <iostream>
+#include <string>
 #include <unistd.h>
 
 using namespace std;
 
-UdpClient::UdpClient(int mode, QObject *parent)
-    : QObject(parent), m_mode(mode), m_stdinNotifier(nullptr)
+static const int kRetryIntervalMs = 3000;
+static const int kMaxAttempts = 5;
+
+UdpClient::UdpClient(int mode, const QString &serverHost, quint16 serverPort, QObject *parent)
+    : QObject(parent)
+    , udpSocket(new QUdpSocket(this))
+    , m_mode(mode)
+    , m_stdinNotifier(nullptr)
+    , m_serverAddress(serverHost)
+    , m_serverPort(serverPort)
+    , m_retryTimer(nullptr)
+    , m_attempts(0)
 {
-    udpSocket = new QUdpSocket(this);
-    udpSocket->bind(QHostAddress::AnyIPv4, 0);
+    if (m_serverPort == 0)
+        m_serverPort = (m_mode == 6) ? 5555 : 50050;
+
+    if (!udpSocket->bind(QHostAddress::AnyIPv4, 0))
+        cerr << "[Клиент] Не удалось занять локальный UDP-порт" << endl;
+
     connect(udpSocket, &QUdpSocket::readyRead, this, &UdpClient::readPendingDatagrams);
 
     if (m_mode == 6) {
         m_stdinNotifier = new QSocketNotifier(STDIN_FILENO, QSocketNotifier::Read, this);
         connect(m_stdinNotifier, &QSocketNotifier::activated, this, &UdpClient::onStdinReady);
-        cout << "[ЛР6] Клиент запущен. Введите сообщение (exit для выхода):" << endl;
+        cout << "[ЛР6] Клиент запущен. Сервер: " << m_serverAddress.toString().toStdString()
+             << ':' << m_serverPort << endl;
+        cout << "[ЛР6] Введите сообщение (exit для выхода):" << endl;
     } else {
-        cout << "[ЛР7] Клиент запущен." << endl;
+        m_retryTimer = new QTimer(this);
+        m_retryTimer->setSingleShot(true);
+        m_retryTimer->setInterval(kRetryIntervalMs);
+        connect(m_retryTimer, &QTimer::timeout, this, &UdpClient::onRetryTimeout);
+        cout << "[ЛР7] Клиент запущен. Сервер: " << m_serverAddress.toString().toStdString()
+             << ':' << m_serverPort << endl;
     }
 }
 
-void UdpClient::sendLab6Message(const QString &msg, const QString &host, quint16 port)
+void UdpClient::sendLab6Message(const QString &msg)
 {
-    QByteArray data = msg.toUtf8();
-    udpSocket->writeDatagram(data, QHostAddress(host), port);
+    udpSocket->writeDatagram(msg.toUtf8(), m_serverAddress, m_serverPort);
     cout << "[ЛР6] Отправлено: " << msg.toStdString() << endl;
 }
 
-void UdpClient::requestLab7Task(const QString &host, quint16 serverPort)
+void UdpClient::requestLab7Task()
 {
-    m_serverAddress = QHostAddress(host);
-    m_serverPort = serverPort;
     cout << "[ЛР7] Отправка запроса HELLO..." << endl;
-    udpSocket->writeDatagram("HELLO", m_serverAddress, m_serverPort);
+    sendRequest("HELLO");
+}
+
+void UdpClient::sendRequest(const QString &msg)
+{
+    udpSocket->writeDatagram(msg.toUtf8(), m_serverAddress, m_serverPort);
+    ++m_attempts;
+
+    if (m_retryTimer)
+        m_retryTimer->start();
+}
+
+void UdpClient::onRetryTimeout()
+{
+    if (m_attempts >= kMaxAttempts) {
+        cout << "[ЛР7] Сервер не отвечает, попытки исчерпаны. Выход." << endl;
+        QCoreApplication::quit();
+        return;
+    }
+
+    cout << "[ЛР7] Нет ответа от сервера, повторный запрос ("
+         << m_attempts << '/' << kMaxAttempts << ")..." << endl;
+    sendRequest("RETRY");
 }
 
 void UdpClient::onStdinReady()
 {
     string line;
-    getline(cin, line);
-    if (line == "exit") {
-        QCoreApplication::quit();
-    } else {
-        sendLab6Message(QString::fromStdString(line), "127.0.0.1", 5555);
+    if (!getline(cin, line)) {
+        if (m_stdinNotifier)
+            m_stdinNotifier->setEnabled(false);
+        return;
     }
+
+    const QString msg = QString::fromStdString(line).trimmed();
+    if (msg == "exit") {
+        QCoreApplication::quit();
+        return;
+    }
+    if (msg.isEmpty())
+        return;
+
+    sendLab6Message(msg);
+}
+
+void UdpClient::reportFound(const QString &key)
+{
+    if (m_retryTimer)
+        m_retryTimer->stop();
+
+    udpSocket->writeDatagram(QString("FOUND: " + key).toUtf8(), m_serverAddress, m_serverPort);
+    cout << "[ЛР7] Результат отправлен серверу." << endl;
+
+    QTimer::singleShot(200, [] { QCoreApplication::quit(); });
 }
 
 void UdpClient::readPendingDatagrams()
 {
     while (udpSocket->hasPendingDatagrams()) {
-        QNetworkDatagram datagram = udpSocket->receiveDatagram();
-        QString msg = QString::fromUtf8(datagram.data());
+        const QNetworkDatagram datagram = udpSocket->receiveDatagram();
+        const QString msg = QString::fromUtf8(datagram.data()).trimmed();
 
         if (m_mode == 6) {
             cout << "[ЛР6] Ответ сервера: " << msg.toStdString() << endl;
+            continue;
         }
-        else if (m_mode == 7) {
-            if (msg == "NO_MORE_TASKS") {
-                cout << "[ЛР7] Сервер сообщил, что задания закончились. Выход." << endl;
-                QCoreApplication::quit();
-                return;
-            }
 
-            QStringList parts = msg.split("|");
-            if (parts.size() == 3) {
-                QString cipherText = parts[0];
-                int startRange = parts[1].toInt();
-                int endRange = parts[2].toInt();
+        if (m_retryTimer)
+            m_retryTimer->stop();
+        m_attempts = 0;
 
-                cout << "[ЛР7] Получено задание. Диапазон: " << startRange << " - " << endRange << endl;
-
-                WorkerThread *worker = new WorkerThread(cipherText, startRange, endRange, this);
-                connect(worker, &WorkerThread::keyFound, this, [this, datagram](const QString &key, const QString &text){
-                    cout << "[ЛР7] КЛЮЧ НАЙДЕН: " << key.toStdString() << endl;
-                    cout << "[ЛР7] Текст: " << text.toStdString() << endl;
-                    QString resultMsg = "FOUND: " + key;
-                    udpSocket->writeDatagram(resultMsg.toUtf8(), datagram.senderAddress(), datagram.senderPort());
-                });
-                connect(worker, &WorkerThread::finishedWithoutResult, this, [this, datagram](){
-                    cout << "[ЛР7] В данном диапазоне ключ не найден. Запрос следующего." << endl;
-                    udpSocket->writeDatagram("NEXT", datagram.senderAddress(), datagram.senderPort());
-                });
-                QThreadPool::globalInstance()->start(worker);
-            }
+        if (msg == "NO_MORE_TASKS") {
+            cout << "[ЛР7] Сервер сообщил, что задания закончились. Выход." << endl;
+            QCoreApplication::quit();
+            return;
         }
+
+        const QStringList parts = msg.split('|');
+        if (parts.size() != 3) {
+            cout << "[ЛР7] Некорректное задание от сервера, пропущено." << endl;
+            continue;
+        }
+
+        bool startOk = false;
+        bool endOk = false;
+        const QString cipherText = parts[0];
+        const int startRange = parts[1].toInt(&startOk);
+        const int endRange = parts[2].toInt(&endOk);
+
+        if (!startOk || !endOk || startRange > endRange) {
+            cout << "[ЛР7] Некорректный диапазон ключей, задание пропущено." << endl;
+            continue;
+        }
+
+        cout << "[ЛР7] Получено задание. Диапазон: " << startRange << " - " << endRange << endl;
+
+        auto *worker = new WorkerThread(cipherText, startRange, endRange);
+        connect(worker, &WorkerThread::keyFound, this, [this](const QString &key, const QString &text) {
+            cout << "[ЛР7] КЛЮЧ НАЙДЕН: " << key.toStdString() << endl;
+            cout << "[ЛР7] Текст: " << text.toStdString() << endl;
+            reportFound(key);
+        });
+        connect(worker, &WorkerThread::finishedWithoutResult, this, [this]() {
+            cout << "[ЛР7] В данном диапазоне ключ не найден. Запрос следующего." << endl;
+            sendRequest("NEXT");
+        });
+        QThreadPool::globalInstance()->start(worker);
     }
 }

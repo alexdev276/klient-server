@@ -69,7 +69,6 @@ include CMakeFiles/klient-server_autogen.dir/progress.make
 CMakeFiles/klient-server_autogen: klient-server_autogen/timestamp
 
 klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
-klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/uic
 klient-server_autogen/timestamp: CMakeFiles/klient-server_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target klient-server"
 	/opt/homebrew/Cellar/cmake/4.4.3/bin/cmake -E cmake_autogen "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles/klient-server_autogen.dir/AutogenInfo.json" Debug

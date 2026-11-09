@@ -84,8 +84,8 @@ clean: CMakeFiles/klient-server_autogen.dir/clean
 # Target rules for target CMakeFiles/klient-server.dir
 
 # All Build rule for target.
-CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen.dir/all
+CMakeFiles/klient-server.dir/all: CMakeFiles/klient-server_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target klient-server"

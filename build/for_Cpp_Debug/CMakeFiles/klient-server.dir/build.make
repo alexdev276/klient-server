@@ -70,7 +70,6 @@ include CMakeFiles/klient-server.dir/progress.make
 include CMakeFiles/klient-server.dir/flags.make
 
 klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
-klient-server_autogen/timestamp: /opt/homebrew/share/qt/libexec/uic
 klient-server_autogen/timestamp: CMakeFiles/klient-server.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target klient-server"
 	/opt/homebrew/Cellar/cmake/4.4.3/bin/cmake -E cmake_autogen "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles/klient-server_autogen.dir/AutogenInfo.json" Debug
@@ -182,9 +181,7 @@ klient-server: CMakeFiles/klient-server.dir/workerthread.cpp.o
 klient-server: CMakeFiles/klient-server.dir/udpserver.cpp.o
 klient-server: CMakeFiles/klient-server.dir/udpclient.cpp.o
 klient-server: CMakeFiles/klient-server.dir/build.make
-klient-server: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 klient-server: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
-klient-server: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 klient-server: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 klient-server: CMakeFiles/klient-server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable klient-server"
