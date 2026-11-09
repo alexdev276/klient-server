@@ -155,54 +155,6 @@ klient-server_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server_autogen.dir/build.make CMakeFiles/klient-server_autogen.dir/build
 .PHONY : klient-server_autogen/fast
 
-client.o: client.cpp.o
-.PHONY : client.o
-
-# target to build an object file
-client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/client.cpp.o
-.PHONY : client.cpp.o
-
-client.i: client.cpp.i
-.PHONY : client.i
-
-# target to preprocess a source file
-client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/client.cpp.i
-.PHONY : client.cpp.i
-
-client.s: client.cpp.s
-.PHONY : client.s
-
-# target to generate assembly for a file
-client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/client.cpp.s
-.PHONY : client.cpp.s
-
-clientsocketadapter.o: clientsocketadapter.cpp.o
-.PHONY : clientsocketadapter.o
-
-# target to build an object file
-clientsocketadapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o
-.PHONY : clientsocketadapter.cpp.o
-
-clientsocketadapter.i: clientsocketadapter.cpp.i
-.PHONY : clientsocketadapter.i
-
-# target to preprocess a source file
-clientsocketadapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/clientsocketadapter.cpp.i
-.PHONY : clientsocketadapter.cpp.i
-
-clientsocketadapter.s: clientsocketadapter.cpp.s
-.PHONY : clientsocketadapter.s
-
-# target to generate assembly for a file
-clientsocketadapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/clientsocketadapter.cpp.s
-.PHONY : clientsocketadapter.cpp.s
-
 klient-server_autogen/mocs_compilation.o: klient-server_autogen/mocs_compilation.cpp.o
 .PHONY : klient-server_autogen/mocs_compilation.o
 
@@ -251,77 +203,101 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-server.o: server.cpp.o
-.PHONY : server.o
+udpclient.o: udpclient.cpp.o
+.PHONY : udpclient.o
 
 # target to build an object file
-server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.o
-.PHONY : server.cpp.o
+udpclient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpclient.cpp.o
+.PHONY : udpclient.cpp.o
 
-server.i: server.cpp.i
-.PHONY : server.i
+udpclient.i: udpclient.cpp.i
+.PHONY : udpclient.i
 
 # target to preprocess a source file
-server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.i
-.PHONY : server.cpp.i
+udpclient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpclient.cpp.i
+.PHONY : udpclient.cpp.i
 
-server.s: server.cpp.s
-.PHONY : server.s
+udpclient.s: udpclient.cpp.s
+.PHONY : udpclient.s
 
 # target to generate assembly for a file
-server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/server.cpp.s
-.PHONY : server.cpp.s
+udpclient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpclient.cpp.s
+.PHONY : udpclient.cpp.s
 
-serversocketadapter.o: serversocketadapter.cpp.o
-.PHONY : serversocketadapter.o
+udpserver.o: udpserver.cpp.o
+.PHONY : udpserver.o
 
 # target to build an object file
-serversocketadapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.o
-.PHONY : serversocketadapter.cpp.o
+udpserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpserver.cpp.o
+.PHONY : udpserver.cpp.o
 
-serversocketadapter.i: serversocketadapter.cpp.i
-.PHONY : serversocketadapter.i
+udpserver.i: udpserver.cpp.i
+.PHONY : udpserver.i
 
 # target to preprocess a source file
-serversocketadapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.i
-.PHONY : serversocketadapter.cpp.i
+udpserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpserver.cpp.i
+.PHONY : udpserver.cpp.i
 
-serversocketadapter.s: serversocketadapter.cpp.s
-.PHONY : serversocketadapter.s
+udpserver.s: udpserver.cpp.s
+.PHONY : udpserver.s
 
 # target to generate assembly for a file
-serversocketadapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/serversocketadapter.cpp.s
-.PHONY : serversocketadapter.cpp.s
+udpserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/udpserver.cpp.s
+.PHONY : udpserver.cpp.s
 
-socketadapter.o: socketadapter.cpp.o
-.PHONY : socketadapter.o
+vigenere.o: vigenere.cpp.o
+.PHONY : vigenere.o
 
 # target to build an object file
-socketadapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.o
-.PHONY : socketadapter.cpp.o
+vigenere.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/vigenere.cpp.o
+.PHONY : vigenere.cpp.o
 
-socketadapter.i: socketadapter.cpp.i
-.PHONY : socketadapter.i
+vigenere.i: vigenere.cpp.i
+.PHONY : vigenere.i
 
 # target to preprocess a source file
-socketadapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.i
-.PHONY : socketadapter.cpp.i
+vigenere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/vigenere.cpp.i
+.PHONY : vigenere.cpp.i
 
-socketadapter.s: socketadapter.cpp.s
-.PHONY : socketadapter.s
+vigenere.s: vigenere.cpp.s
+.PHONY : vigenere.s
 
 # target to generate assembly for a file
-socketadapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/socketadapter.cpp.s
-.PHONY : socketadapter.cpp.s
+vigenere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/vigenere.cpp.s
+.PHONY : vigenere.cpp.s
+
+workerthread.o: workerthread.cpp.o
+.PHONY : workerthread.o
+
+# target to build an object file
+workerthread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/workerthread.cpp.o
+.PHONY : workerthread.cpp.o
+
+workerthread.i: workerthread.cpp.i
+.PHONY : workerthread.i
+
+# target to preprocess a source file
+workerthread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/workerthread.cpp.i
+.PHONY : workerthread.cpp.i
+
+workerthread.s: workerthread.cpp.s
+.PHONY : workerthread.s
+
+# target to generate assembly for a file
+workerthread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/klient-server.dir/build.make CMakeFiles/klient-server.dir/workerthread.cpp.s
+.PHONY : workerthread.cpp.s
 
 # Help Target
 help:
@@ -334,27 +310,24 @@ help:
 	@echo "... klient-server_autogen"
 	@echo "... klient-server_autogen_timestamp_deps"
 	@echo "... klient-server"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
-	@echo "... clientsocketadapter.o"
-	@echo "... clientsocketadapter.i"
-	@echo "... clientsocketadapter.s"
 	@echo "... klient-server_autogen/mocs_compilation.o"
 	@echo "... klient-server_autogen/mocs_compilation.i"
 	@echo "... klient-server_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
-	@echo "... serversocketadapter.o"
-	@echo "... serversocketadapter.i"
-	@echo "... serversocketadapter.s"
-	@echo "... socketadapter.o"
-	@echo "... socketadapter.i"
-	@echo "... socketadapter.s"
+	@echo "... udpclient.o"
+	@echo "... udpclient.i"
+	@echo "... udpclient.s"
+	@echo "... udpserver.o"
+	@echo "... udpserver.i"
+	@echo "... udpserver.s"
+	@echo "... vigenere.o"
+	@echo "... vigenere.i"
+	@echo "... vigenere.s"
+	@echo "... workerthread.o"
+	@echo "... workerthread.i"
+	@echo "... workerthread.s"
 .PHONY : help
 
 

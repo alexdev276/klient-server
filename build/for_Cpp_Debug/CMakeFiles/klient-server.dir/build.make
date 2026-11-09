@@ -107,103 +107,87 @@ CMakeFiles/klient-server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/main.cpp" -o CMakeFiles/klient-server.dir/main.cpp.s
 
-CMakeFiles/klient-server.dir/socketadapter.cpp.o: CMakeFiles/klient-server.dir/flags.make
-CMakeFiles/klient-server.dir/socketadapter.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/socketadapter.cpp
-CMakeFiles/klient-server.dir/socketadapter.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/klient-server.dir/socketadapter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/socketadapter.cpp.o -MF CMakeFiles/klient-server.dir/socketadapter.cpp.o.d -o CMakeFiles/klient-server.dir/socketadapter.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/socketadapter.cpp"
+CMakeFiles/klient-server.dir/vigenere.cpp.o: CMakeFiles/klient-server.dir/flags.make
+CMakeFiles/klient-server.dir/vigenere.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/vigenere.cpp
+CMakeFiles/klient-server.dir/vigenere.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/klient-server.dir/vigenere.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/vigenere.cpp.o -MF CMakeFiles/klient-server.dir/vigenere.cpp.o.d -o CMakeFiles/klient-server.dir/vigenere.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenere.cpp"
 
-CMakeFiles/klient-server.dir/socketadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/socketadapter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/socketadapter.cpp" > CMakeFiles/klient-server.dir/socketadapter.cpp.i
+CMakeFiles/klient-server.dir/vigenere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/vigenere.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenere.cpp" > CMakeFiles/klient-server.dir/vigenere.cpp.i
 
-CMakeFiles/klient-server.dir/socketadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/socketadapter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/socketadapter.cpp" -o CMakeFiles/klient-server.dir/socketadapter.cpp.s
+CMakeFiles/klient-server.dir/vigenere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/vigenere.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/vigenere.cpp" -o CMakeFiles/klient-server.dir/vigenere.cpp.s
 
-CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o: CMakeFiles/klient-server.dir/flags.make
-CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/clientsocketadapter.cpp
-CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o -MF CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o.d -o CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/clientsocketadapter.cpp"
+CMakeFiles/klient-server.dir/workerthread.cpp.o: CMakeFiles/klient-server.dir/flags.make
+CMakeFiles/klient-server.dir/workerthread.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/workerthread.cpp
+CMakeFiles/klient-server.dir/workerthread.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/klient-server.dir/workerthread.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/workerthread.cpp.o -MF CMakeFiles/klient-server.dir/workerthread.cpp.o.d -o CMakeFiles/klient-server.dir/workerthread.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/workerthread.cpp"
 
-CMakeFiles/klient-server.dir/clientsocketadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/clientsocketadapter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/clientsocketadapter.cpp" > CMakeFiles/klient-server.dir/clientsocketadapter.cpp.i
+CMakeFiles/klient-server.dir/workerthread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/workerthread.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/workerthread.cpp" > CMakeFiles/klient-server.dir/workerthread.cpp.i
 
-CMakeFiles/klient-server.dir/clientsocketadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/clientsocketadapter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/clientsocketadapter.cpp" -o CMakeFiles/klient-server.dir/clientsocketadapter.cpp.s
+CMakeFiles/klient-server.dir/workerthread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/workerthread.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/workerthread.cpp" -o CMakeFiles/klient-server.dir/workerthread.cpp.s
 
-CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: CMakeFiles/klient-server.dir/flags.make
-CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/serversocketadapter.cpp
-CMakeFiles/klient-server.dir/serversocketadapter.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/klient-server.dir/serversocketadapter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/serversocketadapter.cpp.o -MF CMakeFiles/klient-server.dir/serversocketadapter.cpp.o.d -o CMakeFiles/klient-server.dir/serversocketadapter.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversocketadapter.cpp"
+CMakeFiles/klient-server.dir/udpserver.cpp.o: CMakeFiles/klient-server.dir/flags.make
+CMakeFiles/klient-server.dir/udpserver.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpserver.cpp
+CMakeFiles/klient-server.dir/udpserver.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/klient-server.dir/udpserver.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/udpserver.cpp.o -MF CMakeFiles/klient-server.dir/udpserver.cpp.o.d -o CMakeFiles/klient-server.dir/udpserver.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpserver.cpp"
 
-CMakeFiles/klient-server.dir/serversocketadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/serversocketadapter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversocketadapter.cpp" > CMakeFiles/klient-server.dir/serversocketadapter.cpp.i
+CMakeFiles/klient-server.dir/udpserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/udpserver.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpserver.cpp" > CMakeFiles/klient-server.dir/udpserver.cpp.i
 
-CMakeFiles/klient-server.dir/serversocketadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/serversocketadapter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/serversocketadapter.cpp" -o CMakeFiles/klient-server.dir/serversocketadapter.cpp.s
+CMakeFiles/klient-server.dir/udpserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/udpserver.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpserver.cpp" -o CMakeFiles/klient-server.dir/udpserver.cpp.s
 
-CMakeFiles/klient-server.dir/server.cpp.o: CMakeFiles/klient-server.dir/flags.make
-CMakeFiles/klient-server.dir/server.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/server.cpp
-CMakeFiles/klient-server.dir/server.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/klient-server.dir/server.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/server.cpp.o -MF CMakeFiles/klient-server.dir/server.cpp.o.d -o CMakeFiles/klient-server.dir/server.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/server.cpp"
+CMakeFiles/klient-server.dir/udpclient.cpp.o: CMakeFiles/klient-server.dir/flags.make
+CMakeFiles/klient-server.dir/udpclient.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/udpclient.cpp
+CMakeFiles/klient-server.dir/udpclient.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/klient-server.dir/udpclient.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/udpclient.cpp.o -MF CMakeFiles/klient-server.dir/udpclient.cpp.o.d -o CMakeFiles/klient-server.dir/udpclient.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpclient.cpp"
 
-CMakeFiles/klient-server.dir/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/server.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/server.cpp" > CMakeFiles/klient-server.dir/server.cpp.i
+CMakeFiles/klient-server.dir/udpclient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/udpclient.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpclient.cpp" > CMakeFiles/klient-server.dir/udpclient.cpp.i
 
-CMakeFiles/klient-server.dir/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/server.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/server.cpp" -o CMakeFiles/klient-server.dir/server.cpp.s
-
-CMakeFiles/klient-server.dir/client.cpp.o: CMakeFiles/klient-server.dir/flags.make
-CMakeFiles/klient-server.dir/client.cpp.o: /Users/sergejzemskov/Институт/Инфокомуникационные\ сети\ и\ системы/Programs/klient-server/client.cpp
-CMakeFiles/klient-server.dir/client.cpp.o: CMakeFiles/klient-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/klient-server.dir/client.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/klient-server.dir/client.cpp.o -MF CMakeFiles/klient-server.dir/client.cpp.o.d -o CMakeFiles/klient-server.dir/client.cpp.o -c "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/client.cpp"
-
-CMakeFiles/klient-server.dir/client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/klient-server.dir/client.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/client.cpp" > CMakeFiles/klient-server.dir/client.cpp.i
-
-CMakeFiles/klient-server.dir/client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/client.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/client.cpp" -o CMakeFiles/klient-server.dir/client.cpp.s
+CMakeFiles/klient-server.dir/udpclient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/klient-server.dir/udpclient.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/udpclient.cpp" -o CMakeFiles/klient-server.dir/udpclient.cpp.s
 
 # Object files for target klient-server
 klient__server_OBJECTS = \
 "CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/klient-server.dir/main.cpp.o" \
-"CMakeFiles/klient-server.dir/socketadapter.cpp.o" \
-"CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o" \
-"CMakeFiles/klient-server.dir/serversocketadapter.cpp.o" \
-"CMakeFiles/klient-server.dir/server.cpp.o" \
-"CMakeFiles/klient-server.dir/client.cpp.o"
+"CMakeFiles/klient-server.dir/vigenere.cpp.o" \
+"CMakeFiles/klient-server.dir/workerthread.cpp.o" \
+"CMakeFiles/klient-server.dir/udpserver.cpp.o" \
+"CMakeFiles/klient-server.dir/udpclient.cpp.o"
 
 # External object files for target klient-server
 klient__server_EXTERNAL_OBJECTS =
 
 klient-server: CMakeFiles/klient-server.dir/klient-server_autogen/mocs_compilation.cpp.o
 klient-server: CMakeFiles/klient-server.dir/main.cpp.o
-klient-server: CMakeFiles/klient-server.dir/socketadapter.cpp.o
-klient-server: CMakeFiles/klient-server.dir/clientsocketadapter.cpp.o
-klient-server: CMakeFiles/klient-server.dir/serversocketadapter.cpp.o
-klient-server: CMakeFiles/klient-server.dir/server.cpp.o
-klient-server: CMakeFiles/klient-server.dir/client.cpp.o
+klient-server: CMakeFiles/klient-server.dir/vigenere.cpp.o
+klient-server: CMakeFiles/klient-server.dir/workerthread.cpp.o
+klient-server: CMakeFiles/klient-server.dir/udpserver.cpp.o
+klient-server: CMakeFiles/klient-server.dir/udpclient.cpp.o
 klient-server: CMakeFiles/klient-server.dir/build.make
 klient-server: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 klient-server: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
 klient-server: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 klient-server: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 klient-server: CMakeFiles/klient-server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable klient-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/sergejzemskov/Институт/Инфокомуникационные сети и системы/Programs/klient-server/build/for_Cpp_Debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable klient-server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/klient-server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

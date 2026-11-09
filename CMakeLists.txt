@@ -10,17 +10,22 @@ qt_standard_project_setup()
 # В сборку включены только файлы для UDP версии (ЛР4-5)
 qt_add_executable(klient-server
     main.cpp
-    isocketadapter.h
-    socketadapter.h
-    socketadapter.cpp
-    clientsocketadapter.h
-    clientsocketadapter.cpp
-    serversocketadapter.h
-    serversocketadapter.cpp
-    server.h
-    server.cpp
-    client.h
-    client.cpp
+    vigenere.h vigenere.cpp
+    workerthread.h workerthread.cpp
+    udpserver.h udpserver.cpp
+    udpclient.h udpclient.cpp
+
+
+
+
+
+
+
+
+
+
+
+
 
     # --- СТАРЫЕ ФАЙЛЫ (ЗАКОММЕНТИРОВАНЫ, ЧТОБЫ НЕ УДАЛЯТЬ ИХ С ДИСКА) ---
     # vigenereserver.h

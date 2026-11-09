@@ -1,29 +1,31 @@
+// udpclient.h
 #ifndef UDPCLIENT_H
 #define UDPCLIENT_H
 
-#include <QDialog>
-#include <QVBoxLayout>
-#include <QTextEdit>
-#include <QPushButton>
+#include <QObject>
 #include <QUdpSocket>
+#include <QSocketNotifier>
 
-class UdpClient : public QDialog
+class UdpClient : public QObject
 {
     Q_OBJECT
 public:
-    UdpClient(QWidget *parent = nullptr);
-    ~UdpClient();
+    explicit UdpClient(int mode, QObject *parent = nullptr);
+
+public slots:
+    void sendLab6Message(const QString &msg, const QString &host, quint16 port);
+    void requestLab7Task(const QString &host, quint16 serverPort);
 
 private slots:
-    void CloseBtnClicked();
-    void dataReceived();
+    void readPendingDatagrams();
+    void onStdinReady();
 
 private:
-    QTextEdit *ReceiveTextEdit;
-    QPushButton *CloseBtn;
-    QVBoxLayout *mainLayout;
-    int port;
     QUdpSocket *udpSocket;
+    int m_mode;
+    QSocketNotifier *m_stdinNotifier;
+    QHostAddress m_serverAddress;
+    quint16 m_serverPort;
 };
 
 #endif // UDPCLIENT_H

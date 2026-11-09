@@ -1,54 +1,56 @@
+// udpserver.cpp
 #include "udpserver.h"
-#include <QHostAddress>
-#include <QDebug>
+#include <QNetworkDatagram>
+#include <iostream>
 
-UdpServer::UdpServer(QWidget *parent) : QWidget(parent)
+using namespace std;
+
+UdpServer::UdpServer(quint16 port, int mode, QObject *parent)
+    : QObject(parent), m_mode(mode)
 {
-    setWindowTitle(tr("UDP Server (Broadcast)"));
-    resize(300, 150);
-
-    TimerLabel = new QLabel(tr("Введите сообщение:"), this);
-    TextLineEdit = new QLineEdit(this);
-    StartBtn = new QPushButton(tr("Начать рассылку"), this);
-
-    mainLayout = new QVBoxLayout(this);
-    mainLayout->addWidget(TimerLabel);
-    mainLayout->addWidget(TextLineEdit);
-    mainLayout->addWidget(StartBtn);
-
-    connect(StartBtn, SIGNAL(clicked()), this, SLOT(StartBtnClicked()));
-
-    port = 5555;
-    isStarted = false;
     udpSocket = new QUdpSocket(this);
-    timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(timeout()));
-}
+    udpSocket->bind(QHostAddress::Any, port);
+    connect(udpSocket, &QUdpSocket::readyRead, this, &UdpServer::readPendingDatagrams);
 
-UdpServer::~UdpServer() {}
-
-void UdpServer::StartBtnClicked()
-{
-    if(!isStarted) {
-        StartBtn->setText("Остановить");
-        timer->start(1000); // Отправка раз в секунду
-        isStarted = true;
+    if (m_mode == 6) {
+        cout << "[ЛР6] UDP Сервер запущен на порту " << port << endl;
     } else {
-        StartBtn->setText("Начать рассылку");
-        isStarted = false;
-        timer->stop();
+        cout << "[ЛР7] Сервер распределенных вычислений запущен на порту " << port << endl;
+        m_nextKeyStart = 1000;
+        m_keyStep = 1000;
+        m_maxKey = 10000;
     }
 }
 
-void UdpServer::timeout()
+void UdpServer::readPendingDatagrams()
 {
-    QString msg = TextLineEdit->text();
-    if (msg.isEmpty()) return;
+    while (udpSocket->hasPendingDatagrams()) {
+        QNetworkDatagram datagram = udpSocket->receiveDatagram();
+        QString msg = QString::fromUtf8(datagram.data());
 
-    QByteArray datagram = msg.toUtf8();
-    // Отправка на широковещательный адрес
-    qint64 sent = udpSocket->writeDatagram(datagram, QHostAddress::Broadcast, port);
-    if (sent != datagram.size()) {
-        qDebug() << "Ошибка отправки дейтаграммы";
+        if (m_mode == 6) {
+            cout << "[ЛР6] Получено от клиента: " << msg.toStdString() << endl;
+            QString reply = "Сервер получил: " + msg;
+            udpSocket->writeDatagram(reply.toUtf8(), datagram.senderAddress(), datagram.senderPort());
+        }
+        else if (m_mode == 7) {
+            if (msg == "HELLO" || msg == "NEXT") {
+                if (m_nextKeyStart <= m_maxKey) {
+                    int end = m_nextKeyStart + m_keyStep - 1;
+                    if (end > m_maxKey) end = m_maxKey;
+                    QString cipherText = "ДЫввЭфЫdФа13ХІІ2ЫZІПРрggЦУndтЩ0БюggЮхоаЭЩв"; // Пример
+                    QString task = cipherText + "|" + QString::number(m_nextKeyStart) + "|" + QString::number(end);
+                    udpSocket->writeDatagram(task.toUtf8(), datagram.senderAddress(), datagram.senderPort());
+                    cout << "[ЛР7] Выдан диапазон: " << m_nextKeyStart << " - " << end << endl;
+                    m_nextKeyStart += m_keyStep;
+                } else {
+                    udpSocket->writeDatagram("NO_MORE_TASKS", datagram.senderAddress(), datagram.senderPort());
+                    cout << "[ЛР7] Задания закончились." << endl;
+                }
+            }
+            else if (msg.startsWith("FOUND")) {
+                cout << "[ЛР7] Клиент нашел ключ: " << msg.toStdString() << endl;
+            }
+        }
     }
 }
